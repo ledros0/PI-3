@@ -15,7 +15,6 @@ namespace KIngME_
     public partial class btnfavoritos : Form
     {
         string[] Id_Senha_Jogador;
-        string[] jogadorrr;
         int n;
         string grupo = "Copistas de Durham";
 
@@ -102,8 +101,9 @@ namespace KIngME_
 
         private void btnEntrarNaPartida_Click(object sender, EventArgs e)
         {
+            n = Convert.ToInt32(txtIdPartida.Text);
             int idPartida = Convert.ToInt32(txtIdPartida.Text);
-
+            
             string Jogador = Jogo.Entrar(idPartida, txtJogadorNome.Text, txtSenhaEntrarPartida.Text);
 
             Id_Senha_Jogador = Jogador.Split(',');
@@ -179,7 +179,9 @@ namespace KIngME_
         private void button3_Click(object sender, EventArgs e)
         {
             string verificar = Jogo.VerificarVez(n);
-            jogadorrr = verificar.Split('n');
+           
+
+            string [] jogadorrr = verificar.Split('n');
 
             string [] idarray = jogadorrr[0].Split(',');
             string id = idarray[0];
@@ -192,18 +194,14 @@ namespace KIngME_
             for (int i = 0; i < jogadores.Length; i++)
             {
                 int virgula = jogadores[i].IndexOf(',');
-
                 if (virgula == -1) continue; // Se não encontrar vírgula, pula para o próximo
-
                 string antesVirgula = jogadores[i].Substring(0, virgula);
 
                 if (id == antesVirgula)
                 {
                     string[] dadosJogador = jogadores[i].Split(','); 
-                    if (dadosJogador.Length > 1) // Evita erro caso a linha esteja errada
-                    {
-                        label19.Text = dadosJogador[1]; // Nome do jogador
-                    }
+                    label19.Text = dadosJogador[1]; // Nome do jogador
+                    
                 }
             }
 
