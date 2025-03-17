@@ -4,10 +4,10 @@ F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\bin\Debug\KIngME!.pdb
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\bin\Debug\KingMeServer.dll
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\bin\Debug\KingMeServer.xml
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.AssemblyReference.cache
-F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Form1.resources
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Properties.Resources.resources
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.GenerateResource.cache
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.CoreCompileInputs.cache
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.Up2Date
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.exe
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.pdb
+F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.btnfavoritos.resources
