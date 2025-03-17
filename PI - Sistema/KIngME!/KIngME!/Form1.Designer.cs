@@ -83,6 +83,7 @@
             this.lblerros = new System.Windows.Forms.Label();
             this.lblErroposicao = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label13
@@ -592,11 +593,21 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(799, 447);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 13);
+            this.label18.TabIndex = 63;
+            this.label18.Text = "label18";
+            // 
             // btnfavoritos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 748);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lblErroposicao);
             this.Controls.Add(this.lblerros);
@@ -716,6 +727,7 @@
         private System.Windows.Forms.Label lblerros;
         private System.Windows.Forms.Label lblErroposicao;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label18;
     }
 }
 
