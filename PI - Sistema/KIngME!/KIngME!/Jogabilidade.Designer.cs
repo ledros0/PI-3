@@ -46,6 +46,8 @@
             this.lbListaDePersonagens = new System.Windows.Forms.ListBox();
             this.label16 = new System.Windows.Forms.Label();
             this.lblFavoritos = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -155,7 +157,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(1045, 29);
+            this.label17.Location = new System.Drawing.Point(45, 565);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(43, 13);
             this.label17.TabIndex = 68;
@@ -172,7 +174,7 @@
             "2,Mercadores",
             "1,Artesãos",
             "0,Plebeus"});
-            this.listBox1.Location = new System.Drawing.Point(1026, 57);
+            this.listBox1.Location = new System.Drawing.Point(26, 593);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(88, 121);
             this.listBox1.TabIndex = 67;
@@ -180,7 +182,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1045, 228);
+            this.label15.Location = new System.Drawing.Point(54, 362);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(69, 13);
             this.label15.TabIndex = 66;
@@ -204,7 +206,7 @@
             "Quintas",
             "Ranulfo",
             "Toshio"});
-            this.lbListaDePersonagens.Location = new System.Drawing.Point(1017, 244);
+            this.lbListaDePersonagens.Location = new System.Drawing.Point(26, 378);
             this.lbListaDePersonagens.Name = "lbListaDePersonagens";
             this.lbListaDePersonagens.Size = new System.Drawing.Size(114, 173);
             this.lbListaDePersonagens.TabIndex = 65;
@@ -226,11 +228,22 @@
             this.lblFavoritos.Size = new System.Drawing.Size(0, 13);
             this.lblFavoritos.TabIndex = 63;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::KIngME_.Properties.Resources.Tabuleiro;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(249, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1001, 917);
+            this.pictureBox1.TabIndex = 81;
+            this.pictureBox1.TabStop = false;
+            // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1166, 774);
+            this.ClientSize = new System.Drawing.Size(1277, 941);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lblErroposicao);
             this.Controls.Add(this.label19);
@@ -252,6 +265,8 @@
             this.Name = "Jogabilidade";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jogabilidade";
+            this.Load += new System.EventHandler(this.Jogabilidade_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,5 +292,6 @@
         private System.Windows.Forms.ListBox lbListaDePersonagens;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblFavoritos;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

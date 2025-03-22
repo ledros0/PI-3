@@ -15,14 +15,13 @@ namespace KIngME_
     {
         Form1 form1 = new Form1();
 
-        int idpartida;
-        string[] id_senha_jogador;
+        public int idpartida { get; set; }
+        public string[] id_senha_jogador { get; set; }
 
         public Jogabilidade()
         {   
             InitializeComponent();
-            this.idpartida = form1.idpartida;
-            this.id_senha_jogador = form1.idSenhaJogadorEnviar;
+            
         }
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -61,7 +60,7 @@ namespace KIngME_
 
             for (int i = 0; i < jogadores.Length; i++)
             {
-                int virgula = jogadores[i].IndexOf(',');
+                int virgula = jogadores[i].IndexOf(','); //buscar primeira virgula no array
                 if (virgula == -1) continue; // Se não encontrar vírgula, pula para o próximo
                 string antesVirgula = jogadores[i].Substring(0, virgula);
 
@@ -80,6 +79,11 @@ namespace KIngME_
             //{
 
             // }
+        }
+
+        private void Jogabilidade_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

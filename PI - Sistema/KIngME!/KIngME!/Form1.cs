@@ -14,9 +14,9 @@ namespace KIngME_
 
     public partial class Form1 : Form
     {
-        public string[] idSenhaJogadorEnviar { get; set; }
+        
         string[] Id_Senha_Jogador;
-        public int idpartida { get; set; }
+        
         int n; 
 
         public string grupo = "Copistas de Durham";
@@ -133,19 +133,9 @@ namespace KIngME_
             string jogo_Iniciar = Jogo.Iniciar(Entrar_IdJogador, Id_Senha_Jogador[1]);
 
             Jogabilidade jogar = new Jogabilidade();
-            this.idpartida = n;
-            this.idSenhaJogadorEnviar = Id_Senha_Jogador;
-            jogar.Show();
-            //if (jogo_Iniciar.Substring(0, 4) == "ERRO")
-            // {
-            //    lblErroIniciar.Text = Jogo.ListarCartas(Entrar_IdJogador, Id_Senha_Jogador[1]);
-            //}
-            // else
-            // {/
-
-            // }
-
-
+            jogar.idpartida = this.n;
+            jogar.id_senha_jogador = this.Id_Senha_Jogador;
+            jogar.Show();        
         }
         private void label13_Click(object sender, EventArgs e)
         {
