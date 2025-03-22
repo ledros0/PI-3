@@ -12,14 +12,16 @@ using KingMeServer;
 namespace KIngME_
 {
 
-    public partial class btnfavoritos : Form
+    public partial class Form1 : Form
     {
+        public string[] idSenhaJogadorEnviar { get; set; }
         string[] Id_Senha_Jogador;
-        string[] jogadorrr;
-        int n;
-        string grupo = "Copistas de Durham";
+        public int idpartida { get; set; }
+        int n; 
 
-        public btnfavoritos()
+        public string grupo = "Copistas de Durham";
+       
+        public Form1()
         {
             InitializeComponent();
             cbListarOpcoes.SelectedIndex = 0;
@@ -102,8 +104,9 @@ namespace KIngME_
 
         private void btnEntrarNaPartida_Click(object sender, EventArgs e)
         {
+            n = Convert.ToInt32(txtIdPartida.Text);
             int idPartida = Convert.ToInt32(txtIdPartida.Text);
-
+            
             string Jogador = Jogo.Entrar(idPartida, txtJogadorNome.Text, txtSenhaEntrarPartida.Text);
 
             Id_Senha_Jogador = Jogador.Split(',');
@@ -128,14 +131,19 @@ namespace KIngME_
             int Entrar_IdJogador = Convert.ToInt32(Id_Senha_Jogador[0]);
 
             string jogo_Iniciar = Jogo.Iniciar(Entrar_IdJogador, Id_Senha_Jogador[1]);
+
+            Jogabilidade jogar = new Jogabilidade();
+            this.idpartida = n;
+            this.idSenhaJogadorEnviar = Id_Senha_Jogador;
+            jogar.Show();
             //if (jogo_Iniciar.Substring(0, 4) == "ERRO")
-           // {
+            // {
             //    lblErroIniciar.Text = Jogo.ListarCartas(Entrar_IdJogador, Id_Senha_Jogador[1]);
             //}
-           // else
-           // {/
-               
-           // }
+            // else
+            // {/
+
+            // }
 
 
         }
@@ -159,67 +167,5 @@ namespace KIngME_
 
         }
 
-        private void btnPosicionar_Click(object sender, EventArgs e)
-        {
-         
-            int idJogador = Convert.ToInt32(Id_Senha_Jogador[0]);
-            string senhaJogador = Id_Senha_Jogador[1];
-            int setor = Convert.ToInt32(txtSetor.Text);
-           string colocar = Jogo.ColocarPersonagem(idJogador, senhaJogador, setor, txtPosicionarPersonagem.Text);
-            if(setor == null || txtPosicionarPersonagem.Text == "\0")
-            {
-                lblErroposicao.Text = colocar;
-            }
-            if (colocar.Substring(0, 4) == "ERRO")
-            {
-                lblErroposicao.Text = colocar;
-            }
-        }
-        
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string verificar = Jogo.VerificarVez(n);
-            jogadorrr = verificar.Split('n');
-
-            string [] idarray = jogadorrr[0].Split(',');
-            string id = idarray[0];
-            lblJogadorDaVez.Text = idarray[0];
-
-           string ListadeJogadores = Jogo.ListarJogadores(n);
-           ListadeJogadores = ListadeJogadores.Replace("\r", "");
-           string []jogadores = ListadeJogadores.Split('\n');      
-
-            for (int i = 0; i < jogadores.Length; i++)
-            {
-                int virgula = jogadores[i].IndexOf(',');
-
-                if (virgula == -1) continue; // Se não encontrar vírgula, pula para o próximo
-
-                string antesVirgula = jogadores[i].Substring(0, virgula);
-
-                if (id == antesVirgula)
-                {
-                    string[] dadosJogador = jogadores[i].Split(','); 
-                    if (dadosJogador.Length > 1) // Evita erro caso a linha esteja errada
-                    {
-                        label19.Text = dadosJogador[1]; // Nome do jogador
-                    }
-                }
-            }
-
-
-            // label19.Text = jogadores[1];
-
-            // if (jogadorVez[1].ContainsKey(verificar))
-            //{
-
-            // }
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-          lblFavoritos.Text=  Jogo.ListarCartas(Convert.ToInt32(Id_Senha_Jogador[0]), Id_Senha_Jogador[1]);
-        }
     }
 }

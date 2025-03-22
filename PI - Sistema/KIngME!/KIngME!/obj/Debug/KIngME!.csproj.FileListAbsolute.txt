@@ -10,4 +10,5 @@ F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.Core
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.Up2Date
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.exe
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.pdb
-F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.btnfavoritos.resources
+F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Form1.resources
+F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Jogabilidade.resources
