@@ -14,7 +14,7 @@ namespace KIngME_
     public partial class Jogabilidade : Form
     {
         Form1 form1 = new Form1();
-
+        int contador = 1;
         public int idpartida { get; set; }
         public string[] id_senha_jogador { get; set; }
 
@@ -71,7 +71,23 @@ namespace KIngME_
 
                 }
             }
-
+            string[] verificar_setor = verificar.Split('\n');
+            //verificar_setor = verificar_setor.Replace("\r", "");
+            for(int i = contador; i < verificar_setor.Length; i++)
+            {
+                verificar_setor = verificar_setor[i].Split(',');
+                int setor = Convert.ToInt32(verificar_setor[0]);
+                string personagem = verificar_setor[1];
+            }
+            contador++;
+            
+            /*Receber o setor, verificar qual personagem se encontra neste setor
+              Criar 1 panel para cada setor
+              Se a posição x1 y1 ja esta ocupada, adicionar personagem na posição x1+40 y1+40 e assim vai dobrando
+              Como verificar o personagem naquele Setor, com a label do mesmo ?
+              Switch case para verificar qual setor esta selecionado   
+              variavel.location para receber e comparar cm aquela q deseja entrar.
+             */
 
             // label19.Text = jogadores[1];
 
