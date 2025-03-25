@@ -21,7 +21,19 @@ namespace KIngME_
         public Jogabilidade()
         {   
             InitializeComponent();
-            
+            lblPersonagemA.Location = new Point(-300, 0); // Colocar os labels para fora do panel(isso deixa eles "invisiveis")
+            lblPersonagemB.Location = new Point(-300, 0);
+            lblPersonagemC.Location = new Point(-300, 0);
+            lblPersonagemD.Location = new Point(-300, 0);
+            lblPersonagemE.Location = new Point(-300, 0);
+            lblPersonagemG.Location = new Point(-300, 0);
+            lblPersonagemH.Location = new Point(-300, 0);
+            lblPersonagemK.Location = new Point(-300, 0);
+            lblPersonagemL.Location = new Point(-300, 0);
+            lblPersonagemM.Location = new Point(-300, 0);
+            lblPersonagemQ.Location = new Point(-300, 0);
+            lblPersonagemR.Location = new Point(-300, 0);
+            lblPersonagemT.Location = new Point(-300, 0);
         }
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -49,7 +61,6 @@ namespace KIngME_
 
             string verificar = Jogo.VerificarVez(idpartida);
             string[] jogadorrr = verificar.Split('n');
-
             string[] idarray = jogadorrr[0].Split(',');
             string id = idarray[0];
             lblJogadorDaVez.Text = idarray[0];
@@ -68,18 +79,86 @@ namespace KIngME_
                 {
                     string[] dadosJogador = jogadores[i].Split(',');
                     label19.Text = dadosJogador[1]; // Nome do jogador
-
                 }
             }
+
             string[] verificar_setor = verificar.Split('\n');
-            //verificar_setor = verificar_setor.Replace("\r", "");
-            for(int i = contador; i < verificar_setor.Length; i++)
+
+            bool[,] setor_disponivel = new bool[,] { // Inicializa uma matriz de booleano para saber qual posição está ocupada
+                { false, false, false, false },
+                { false, false, false, false },
+                { false, false, false, false },
+                { false, false, false, false },
+                { false, false, false, false },
+                { false, false, false, false }
+            };
+
+            for (int i = 1; i < verificar_setor.Length; i++)
             {
                 verificar_setor = verificar_setor[i].Split(',');
                 int setor = Convert.ToInt32(verificar_setor[0]);
                 string personagem = verificar_setor[1];
+                int x = 0;
+                int y = 0;
+
+                for (int j = 0; j < 4; j++)
+                {
+                    if (setor_disponivel[setor, j] == false)
+                    {
+                        setor_disponivel[setor, j] = true;
+                        x = j * 116;
+                        y = 600 - (setor * 120);
+                        break;
+                    }
+                }
+
+                switch (personagem)
+                {
+                    case "A\r":
+                        lblPersonagemA.Location = new Point(x, y);
+                        break;
+                    case "B\r":
+                        lblPersonagemB.Location = new Point(x, y);
+                        break;
+                    case "C\r":
+                        lblPersonagemC.Location = new Point(x, y);
+                        break;
+                    case "D\r":
+                        lblPersonagemD.Location = new Point(x, y);
+                        break;
+                    case "E\r":
+                        lblPersonagemE.Location = new Point(x, y);
+                        break;
+                    case "G\r":
+                        lblPersonagemG.Location = new Point(x, y);
+                        break;
+                    case "H\r":
+                        lblPersonagemH.Location = new Point(x, y);
+                        break;
+                    case "K\r":
+                        lblPersonagemK.Location = new Point(x, y);
+                        break;
+                    case "L\r":
+                        lblPersonagemL.Location = new Point(x, y);
+                        break;
+                    case "M\r":
+                        lblPersonagemM.Location = new Point(x, y);
+                        break;
+                    case "Q\r":
+                        lblPersonagemQ.Location = new Point(x, y);
+                        break;
+                    case "R\r":
+                        lblPersonagemR.Location = new Point(x, y);
+                        break;
+                    case "T\r":
+                        lblPersonagemT.Location = new Point(x, y);
+                        break;
+                    default:
+                        break;
+                }
+                verificar_setor = verificar.Split('\n');
             }
-            contador++;
+
             
             /*Receber o setor, verificar qual personagem se encontra neste setor
               Criar 1 panel para cada setor
@@ -89,15 +168,14 @@ namespace KIngME_
               variavel.location para receber e comparar cm aquela q deseja entrar.
              */
 
-            // label19.Text = jogadores[1];
-
-            // if (jogadorVez[1].ContainsKey(verificar))
-            //{
-
-            // }
         }
 
         private void Jogabilidade_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPersonagemL_Click(object sender, EventArgs e)
         {
 
         }

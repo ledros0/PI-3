@@ -47,7 +47,22 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblFavoritos = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblPersonagemC = new System.Windows.Forms.Label();
+            this.lblPersonagemH = new System.Windows.Forms.Label();
+            this.lblPersonagemM = new System.Windows.Forms.Label();
+            this.lblPersonagemQ = new System.Windows.Forms.Label();
+            this.lblPersonagemR = new System.Windows.Forms.Label();
+            this.lblPersonagemL = new System.Windows.Forms.Label();
+            this.lblPersonagemG = new System.Windows.Forms.Label();
+            this.lblPersonagemD = new System.Windows.Forms.Label();
+            this.lblPersonagemE = new System.Windows.Forms.Label();
+            this.lblPersonagemK = new System.Windows.Forms.Label();
+            this.lblPersonagemT = new System.Windows.Forms.Label();
+            this.lblPersonagemB = new System.Windows.Forms.Label();
+            this.lblPersonagemA = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -200,7 +215,7 @@
             "Eduardo Takeo",
             "Guilherme Rey",
             "Heredia",
-            "Karin",
+            "Kelly Kiyumi",
             "Leonardo Takuno",
             "Mario Toledo",
             "Quintas",
@@ -238,11 +253,150 @@
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblPersonagemC);
+            this.panel1.Controls.Add(this.lblPersonagemH);
+            this.panel1.Controls.Add(this.lblPersonagemM);
+            this.panel1.Controls.Add(this.lblPersonagemQ);
+            this.panel1.Controls.Add(this.lblPersonagemR);
+            this.panel1.Controls.Add(this.lblPersonagemL);
+            this.panel1.Controls.Add(this.lblPersonagemG);
+            this.panel1.Controls.Add(this.lblPersonagemD);
+            this.panel1.Controls.Add(this.lblPersonagemE);
+            this.panel1.Controls.Add(this.lblPersonagemK);
+            this.panel1.Controls.Add(this.lblPersonagemT);
+            this.panel1.Controls.Add(this.lblPersonagemB);
+            this.panel1.Controls.Add(this.lblPersonagemA);
+            this.panel1.Location = new System.Drawing.Point(530, 182);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(464, 722);
+            this.panel1.TabIndex = 82;
+            // 
+            // lblPersonagemC
+            // 
+            this.lblPersonagemC.AutoSize = true;
+            this.lblPersonagemC.Location = new System.Drawing.Point(95, 0);
+            this.lblPersonagemC.Name = "lblPersonagemC";
+            this.lblPersonagemC.Size = new System.Drawing.Size(31, 13);
+            this.lblPersonagemC.TabIndex = 12;
+            this.lblPersonagemC.Text = "Claro";
+            // 
+            // lblPersonagemH
+            // 
+            this.lblPersonagemH.AutoSize = true;
+            this.lblPersonagemH.Location = new System.Drawing.Point(352, 0);
+            this.lblPersonagemH.Name = "lblPersonagemH";
+            this.lblPersonagemH.Size = new System.Drawing.Size(44, 13);
+            this.lblPersonagemH.TabIndex = 11;
+            this.lblPersonagemH.Text = "Heredia";
+            // 
+            // lblPersonagemM
+            // 
+            this.lblPersonagemM.AutoSize = true;
+            this.lblPersonagemM.Location = new System.Drawing.Point(61, 13);
+            this.lblPersonagemM.Name = "lblPersonagemM";
+            this.lblPersonagemM.Size = new System.Drawing.Size(33, 13);
+            this.lblPersonagemM.TabIndex = 10;
+            this.lblPersonagemM.Text = "Mario";
+            // 
+            // lblPersonagemQ
+            // 
+            this.lblPersonagemQ.AutoSize = true;
+            this.lblPersonagemQ.Location = new System.Drawing.Point(100, 13);
+            this.lblPersonagemQ.Name = "lblPersonagemQ";
+            this.lblPersonagemQ.Size = new System.Drawing.Size(43, 13);
+            this.lblPersonagemQ.TabIndex = 9;
+            this.lblPersonagemQ.Text = "Quintas";
+            // 
+            // lblPersonagemR
+            // 
+            this.lblPersonagemR.AutoSize = true;
+            this.lblPersonagemR.Location = new System.Drawing.Point(149, 13);
+            this.lblPersonagemR.Name = "lblPersonagemR";
+            this.lblPersonagemR.Size = new System.Drawing.Size(44, 13);
+            this.lblPersonagemR.TabIndex = 8;
+            this.lblPersonagemR.Text = "Ranulfo";
+            // 
+            // lblPersonagemL
+            // 
+            this.lblPersonagemL.AutoSize = true;
+            this.lblPersonagemL.Location = new System.Drawing.Point(3, 13);
+            this.lblPersonagemL.Name = "lblPersonagemL";
+            this.lblPersonagemL.Size = new System.Drawing.Size(52, 13);
+            this.lblPersonagemL.TabIndex = 7;
+            this.lblPersonagemL.Text = "Leonardo";
+            this.lblPersonagemL.Click += new System.EventHandler(this.lblPersonagemL_Click);
+            // 
+            // lblPersonagemG
+            // 
+            this.lblPersonagemG.AutoSize = true;
+            this.lblPersonagemG.Location = new System.Drawing.Point(271, 0);
+            this.lblPersonagemG.Name = "lblPersonagemG";
+            this.lblPersonagemG.Size = new System.Drawing.Size(76, 13);
+            this.lblPersonagemG.TabIndex = 6;
+            this.lblPersonagemG.Text = "Guilherme Rey";
+            // 
+            // lblPersonagemD
+            // 
+            this.lblPersonagemD.AutoSize = true;
+            this.lblPersonagemD.Location = new System.Drawing.Point(132, 0);
+            this.lblPersonagemD.Name = "lblPersonagemD";
+            this.lblPersonagemD.Size = new System.Drawing.Size(46, 13);
+            this.lblPersonagemD.TabIndex = 5;
+            this.lblPersonagemD.Text = "Douglas";
+            // 
+            // lblPersonagemE
+            // 
+            this.lblPersonagemE.AutoSize = true;
+            this.lblPersonagemE.Location = new System.Drawing.Point(184, 0);
+            this.lblPersonagemE.Name = "lblPersonagemE";
+            this.lblPersonagemE.Size = new System.Drawing.Size(81, 13);
+            this.lblPersonagemE.TabIndex = 4;
+            this.lblPersonagemE.Text = "Eduardo Takeo";
+            // 
+            // lblPersonagemK
+            // 
+            this.lblPersonagemK.AutoSize = true;
+            this.lblPersonagemK.Location = new System.Drawing.Point(402, 0);
+            this.lblPersonagemK.Name = "lblPersonagemK";
+            this.lblPersonagemK.Size = new System.Drawing.Size(29, 13);
+            this.lblPersonagemK.TabIndex = 3;
+            this.lblPersonagemK.Text = "Kelly";
+            // 
+            // lblPersonagemT
+            // 
+            this.lblPersonagemT.AutoSize = true;
+            this.lblPersonagemT.Location = new System.Drawing.Point(199, 13);
+            this.lblPersonagemT.Name = "lblPersonagemT";
+            this.lblPersonagemT.Size = new System.Drawing.Size(39, 13);
+            this.lblPersonagemT.TabIndex = 2;
+            this.lblPersonagemT.Text = "Toshio";
+            // 
+            // lblPersonagemB
+            // 
+            this.lblPersonagemB.AutoSize = true;
+            this.lblPersonagemB.Location = new System.Drawing.Point(50, 0);
+            this.lblPersonagemB.Name = "lblPersonagemB";
+            this.lblPersonagemB.Size = new System.Drawing.Size(39, 13);
+            this.lblPersonagemB.TabIndex = 1;
+            this.lblPersonagemB.Text = "Beatriz";
+            // 
+            // lblPersonagemA
+            // 
+            this.lblPersonagemA.AutoSize = true;
+            this.lblPersonagemA.Location = new System.Drawing.Point(3, 0);
+            this.lblPersonagemA.Name = "lblPersonagemA";
+            this.lblPersonagemA.Size = new System.Drawing.Size(41, 13);
+            this.lblPersonagemA.TabIndex = 0;
+            this.lblPersonagemA.Text = "Adilson";
+            // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1277, 941);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lblErroposicao);
@@ -267,6 +421,8 @@
             this.Text = "Jogabilidade";
             this.Load += new System.EventHandler(this.Jogabilidade_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +449,19 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblFavoritos;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblPersonagemB;
+        private System.Windows.Forms.Label lblPersonagemA;
+        private System.Windows.Forms.Label lblPersonagemC;
+        private System.Windows.Forms.Label lblPersonagemH;
+        private System.Windows.Forms.Label lblPersonagemM;
+        private System.Windows.Forms.Label lblPersonagemQ;
+        private System.Windows.Forms.Label lblPersonagemR;
+        private System.Windows.Forms.Label lblPersonagemL;
+        private System.Windows.Forms.Label lblPersonagemG;
+        private System.Windows.Forms.Label lblPersonagemD;
+        private System.Windows.Forms.Label lblPersonagemE;
+        private System.Windows.Forms.Label lblPersonagemK;
+        private System.Windows.Forms.Label lblPersonagemT;
     }
 }

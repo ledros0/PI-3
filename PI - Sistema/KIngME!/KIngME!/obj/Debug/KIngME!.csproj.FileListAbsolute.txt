@@ -12,3 +12,17 @@ F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.exe
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.pdb
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Form1.resources
 F:\Senac\3° Semestre\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Jogabilidade.resources
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\bin\Debug\KIngME!.exe.config
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\bin\Debug\KIngME!.exe
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\bin\Debug\KIngME!.pdb
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\bin\Debug\KingMeServer.dll
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\bin\Debug\KingMeServer.xml
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.AssemblyReference.cache
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Form1.resources
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Jogabilidade.resources
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME_.Properties.Resources.resources
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.GenerateResource.cache
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.Up2Date
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.exe
+C:\Users\Lucas\Documents\GitHub\Pi 3\PI-3\PI - Sistema\KIngME!\KIngME!\obj\Debug\KIngME!.pdb
