@@ -16,7 +16,7 @@ namespace KIngME_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new btnfavoritos());
+            Application.Run(new Form1());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace KIngME_
 {
-    partial class btnfavoritos
+    partial class Form1
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.label13 = new System.Windows.Forms.Label();
-            this.lbListaDePersonagens = new System.Windows.Forms.ListBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,24 +61,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.lblIdJogador = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblFavoritos = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.cbListarOpcoes = new System.Windows.Forms.ComboBox();
             this.lblErroIniciar = new System.Windows.Forms.Label();
-            this.lblPersonagem = new System.Windows.Forms.Label();
-            this.lblSetor = new System.Windows.Forms.Label();
-            this.txtPosicionarPersonagem = new System.Windows.Forms.TextBox();
-            this.txtSetor = new System.Windows.Forms.TextBox();
-            this.btnPosicionar = new System.Windows.Forms.Button();
-            this.lblIdVez = new System.Windows.Forms.Label();
-            this.lblJogadorVez = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.lblJogadorDaVez = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.lblerros = new System.Windows.Forms.Label();
             this.lblErroposicao = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label13
@@ -94,64 +77,6 @@
             this.label13.TabIndex = 41;
             this.label13.Text = "LOBBY";
             this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // lbListaDePersonagens
-            // 
-            this.lbListaDePersonagens.Enabled = false;
-            this.lbListaDePersonagens.FormattingEnabled = true;
-            this.lbListaDePersonagens.Items.AddRange(new object[] {
-            "Adilson Konrad",
-            "Beatriz Paiva",
-            "Claro",
-            "Douglas Baquiao",
-            "Eduardo Takeo",
-            "Guilherme Rey",
-            "Heredia",
-            "Karin",
-            "Leonardo Takuno",
-            "Mario Toledo",
-            "Quintas",
-            "Ranulfo",
-            "Toshio"});
-            this.lbListaDePersonagens.Location = new System.Drawing.Point(1063, 340);
-            this.lbListaDePersonagens.Name = "lbListaDePersonagens";
-            this.lbListaDePersonagens.Size = new System.Drawing.Size(114, 173);
-            this.lbListaDePersonagens.TabIndex = 45;
-            this.lbListaDePersonagens.SelectedIndexChanged += new System.EventHandler(this.lbListarPersonagem_SelectedIndexChanged);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1091, 324);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(69, 13);
-            this.label15.TabIndex = 47;
-            this.label15.Text = "Personagens";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "10,Rei",
-            "5,Nobres",
-            "4,Dignatários",
-            "3,Oficiais",
-            "2,Mercadores",
-            "1,Artesãos",
-            "0,Plebeus"});
-            this.listBox1.Location = new System.Drawing.Point(1072, 153);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(88, 121);
-            this.listBox1.TabIndex = 48;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(1091, 125);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 13);
-            this.label17.TabIndex = 49;
-            this.label17.Text = "Setores";
             // 
             // button1
             // 
@@ -430,35 +355,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(646, 6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(10, 730);
-            this.textBox1.TabIndex = 40;
-            // 
-            // lblFavoritos
-            // 
-            this.lblFavoritos.AutoSize = true;
-            this.lblFavoritos.Location = new System.Drawing.Point(855, 22);
-            this.lblFavoritos.Name = "lblFavoritos";
-            this.lblFavoritos.Size = new System.Drawing.Size(0, 13);
-            this.lblFavoritos.TabIndex = 42;
-            this.lblFavoritos.Click += new System.EventHandler(this.lblFavoritos_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(796, 22);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(53, 13);
-            this.label16.TabIndex = 43;
-            this.label16.Text = "Favoritos:";
-            // 
             // cbListarOpcoes
             // 
             this.cbListarOpcoes.FormattingEnabled = true;
@@ -480,92 +376,6 @@
             this.lblErroIniciar.Size = new System.Drawing.Size(0, 13);
             this.lblErroIniciar.TabIndex = 46;
             // 
-            // lblPersonagem
-            // 
-            this.lblPersonagem.AutoSize = true;
-            this.lblPersonagem.Location = new System.Drawing.Point(687, 82);
-            this.lblPersonagem.Name = "lblPersonagem";
-            this.lblPersonagem.Size = new System.Drawing.Size(69, 13);
-            this.lblPersonagem.TabIndex = 50;
-            this.lblPersonagem.Text = "Personagem:";
-            // 
-            // lblSetor
-            // 
-            this.lblSetor.AutoSize = true;
-            this.lblSetor.Location = new System.Drawing.Point(711, 125);
-            this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(38, 13);
-            this.lblSetor.TabIndex = 51;
-            this.lblSetor.Text = "Setor: ";
-            // 
-            // txtPosicionarPersonagem
-            // 
-            this.txtPosicionarPersonagem.Location = new System.Drawing.Point(763, 83);
-            this.txtPosicionarPersonagem.Name = "txtPosicionarPersonagem";
-            this.txtPosicionarPersonagem.Size = new System.Drawing.Size(100, 20);
-            this.txtPosicionarPersonagem.TabIndex = 52;
-            // 
-            // txtSetor
-            // 
-            this.txtSetor.Location = new System.Drawing.Point(763, 125);
-            this.txtSetor.Name = "txtSetor";
-            this.txtSetor.Size = new System.Drawing.Size(100, 20);
-            this.txtSetor.TabIndex = 53;
-            // 
-            // btnPosicionar
-            // 
-            this.btnPosicionar.Location = new System.Drawing.Point(892, 105);
-            this.btnPosicionar.Name = "btnPosicionar";
-            this.btnPosicionar.Size = new System.Drawing.Size(75, 23);
-            this.btnPosicionar.TabIndex = 54;
-            this.btnPosicionar.Text = "Posicionar";
-            this.btnPosicionar.UseVisualStyleBackColor = true;
-            this.btnPosicionar.Click += new System.EventHandler(this.btnPosicionar_Click);
-            // 
-            // lblIdVez
-            // 
-            this.lblIdVez.AutoSize = true;
-            this.lblIdVez.Location = new System.Drawing.Point(690, 225);
-            this.lblIdVez.Name = "lblIdVez";
-            this.lblIdVez.Size = new System.Drawing.Size(96, 13);
-            this.lblIdVez.TabIndex = 55;
-            this.lblIdVez.Text = "Id Jogador da Vez:";
-            // 
-            // lblJogadorVez
-            // 
-            this.lblJogadorVez.AutoSize = true;
-            this.lblJogadorVez.Location = new System.Drawing.Point(695, 270);
-            this.lblJogadorVez.Name = "lblJogadorVez";
-            this.lblJogadorVez.Size = new System.Drawing.Size(94, 13);
-            this.lblJogadorVez.TabIndex = 56;
-            this.lblJogadorVez.Text = "Nome do Jogador:";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(714, 310);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 57;
-            this.button3.Text = "VerificarVez";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // lblJogadorDaVez
-            // 
-            this.lblJogadorDaVez.AutoSize = true;
-            this.lblJogadorDaVez.Location = new System.Drawing.Point(793, 224);
-            this.lblJogadorDaVez.Name = "lblJogadorDaVez";
-            this.lblJogadorDaVez.Size = new System.Drawing.Size(0, 13);
-            this.lblJogadorDaVez.TabIndex = 58;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(796, 269);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(0, 13);
-            this.label19.TabIndex = 59;
-            // 
             // lblerros
             // 
             this.lblerros.AutoSize = true;
@@ -577,49 +387,32 @@
             // lblErroposicao
             // 
             this.lblErroposicao.AutoSize = true;
-            this.lblErroposicao.Location = new System.Drawing.Point(763, 169);
+            this.lblErroposicao.Location = new System.Drawing.Point(687, 166);
             this.lblErroposicao.Name = "lblErroposicao";
             this.lblErroposicao.Size = new System.Drawing.Size(0, 13);
             this.lblErroposicao.TabIndex = 61;
             // 
-            // button4
+            // button5
             // 
-            this.button4.Location = new System.Drawing.Point(690, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 62;
-            this.button4.Text = "Favorito";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button5.Location = new System.Drawing.Point(597, 616);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 63;
+            this.button5.Text = "Avançar";
+            this.button5.UseVisualStyleBackColor = true;
+           
             // 
-            // btnfavoritos
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 748);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(1267, 843);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.lblErroposicao);
             this.Controls.Add(this.lblerros);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.lblJogadorDaVez);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.lblJogadorVez);
-            this.Controls.Add(this.lblIdVez);
-            this.Controls.Add(this.btnPosicionar);
-            this.Controls.Add(this.txtSetor);
-            this.Controls.Add(this.txtPosicionarPersonagem);
-            this.Controls.Add(this.lblSetor);
-            this.Controls.Add(this.lblPersonagem);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.lblErroIniciar);
-            this.Controls.Add(this.lbListaDePersonagens);
             this.Controls.Add(this.cbListarOpcoes);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.lblFavoritos);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblIdJogador);
             this.Controls.Add(this.label14);
@@ -652,7 +445,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "btnfavoritos";
+            this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -662,10 +455,6 @@
 
         #endregion
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ListBox lbListaDePersonagens;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -698,24 +487,11 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblIdJogador;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblFavoritos;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cbListarOpcoes;
         private System.Windows.Forms.Label lblErroIniciar;
-        private System.Windows.Forms.Label lblPersonagem;
-        private System.Windows.Forms.Label lblSetor;
-        private System.Windows.Forms.TextBox txtPosicionarPersonagem;
-        private System.Windows.Forms.TextBox txtSetor;
-        private System.Windows.Forms.Button btnPosicionar;
-        private System.Windows.Forms.Label lblIdVez;
-        private System.Windows.Forms.Label lblJogadorVez;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblJogadorDaVez;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lblerros;
         private System.Windows.Forms.Label lblErroposicao;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
