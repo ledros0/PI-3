@@ -21,19 +21,19 @@ namespace KIngME_
         public Jogabilidade()
         {   
             InitializeComponent();
-            lblPersonagemA.Location = new Point(-300, 0); // Colocar os labels para fora do panel(isso deixa eles "invisiveis")
-            lblPersonagemB.Location = new Point(-300, 0);
-            lblPersonagemC.Location = new Point(-300, 0);
-            lblPersonagemD.Location = new Point(-300, 0);
-            lblPersonagemE.Location = new Point(-300, 0);
-            lblPersonagemG.Location = new Point(-300, 0);
-            lblPersonagemH.Location = new Point(-300, 0);
-            lblPersonagemK.Location = new Point(-300, 0);
-            lblPersonagemL.Location = new Point(-300, 0);
-            lblPersonagemM.Location = new Point(-300, 0);
-            lblPersonagemQ.Location = new Point(-300, 0);
-            lblPersonagemR.Location = new Point(-300, 0);
-            lblPersonagemT.Location = new Point(-300, 0);
+            picPersonagemA.Location = new Point(-300, 0); // Colocar os labels para fora do panel(isso deixa eles "invisiveis")
+            picPersonagemB.Location = new Point(-300, 0);
+            picPersonagemC.Location = new Point(-300, 0);
+            picPersonagemD.Location = new Point(-300, 0);
+            picPersonagemE.Location = new Point(-300, 0);
+            picPersonagemG.Location = new Point(-300, 0);
+            picPersonagemH.Location = new Point(-300, 0);
+            picPersonagemK.Location = new Point(-300, 0);
+            picPersonagemL.Location = new Point(-300, 0);
+            picPersonagemM.Location = new Point(-300, 0);
+            picPersonagemQ.Location = new Point(-300, 0);
+            picPersonagemR.Location = new Point(-300, 0);
+            picPersonagemT.Location = new Point(-300, 0);
         }
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -103,7 +103,7 @@ namespace KIngME_
                 int y = 0;
 
                 for (int j = 0; j < 4; j++) // Verificação do espaço disponível para o personagem no setor 
-                {
+                {                           // e determinação das coordenadas onde o label irá
                     if (setor == 10)
                     {
                         setor_disponivel[6, j] = true;
@@ -117,50 +117,50 @@ namespace KIngME_
                         x = j * 116;                        
                         y = 720 - (setor * 120); 
                         break;
-                    }// e determinação das coordenadas onde o label irá
+                    }
 
                 }
 
                 switch (personagem) // Qual label será posicionado nessas coordenadas
                 {
                     case "A\r":
-                        lblPersonagemA.Location = new Point(x, y);
+                        picPersonagemA.Location = new Point(x, y);
                         break;
                     case "B\r":
-                        lblPersonagemB.Location = new Point(x, y);
+                        picPersonagemB.Location = new Point(x, y);
                         break;
                     case "C\r":
-                        lblPersonagemC.Location = new Point(x, y);
+                        picPersonagemC.Location = new Point(x, y);
                         break;
                     case "D\r":
-                        lblPersonagemD.Location = new Point(x, y);
+                        picPersonagemD.Location = new Point(x, y);
                         break;
                     case "E\r":
-                        lblPersonagemE.Location = new Point(x, y);
+                        picPersonagemE.Location = new Point(x, y);
                         break;
                     case "G\r":
-                        lblPersonagemG.Location = new Point(x, y);
+                        picPersonagemG.Location = new Point(x, y);
                         break;
                     case "H\r":
-                        lblPersonagemH.Location = new Point(x, y);
+                        picPersonagemH.Location = new Point(x, y);
                         break;
                     case "K\r":
-                        lblPersonagemK.Location = new Point(x, y);
+                        picPersonagemK.Location = new Point(x, y);
                         break;
                     case "L\r":
-                        lblPersonagemL.Location = new Point(x, y);
+                        picPersonagemL.Location = new Point(x, y);
                         break;
                     case "M\r":
-                        lblPersonagemM.Location = new Point(x, y);
+                        picPersonagemM.Location = new Point(x, y);
                         break;
                     case "Q\r":
-                        lblPersonagemQ.Location = new Point(x, y);
+                        picPersonagemQ.Location = new Point(x, y);
                         break;
                     case "R\r":
-                        lblPersonagemR.Location = new Point(x, y);
+                        picPersonagemR.Location = new Point(x, y);
                         break;
                     case "T\r":
-                        lblPersonagemT.Location = new Point(x, y);
+                        picPersonagemT.Location = new Point(x, y);
                         break;
                     default:
                         break;
@@ -179,10 +179,7 @@ namespace KIngME_
 
         }
 
-        private void lblPersonagemL_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnPromover_Click(object sender, EventArgs e)
         {
