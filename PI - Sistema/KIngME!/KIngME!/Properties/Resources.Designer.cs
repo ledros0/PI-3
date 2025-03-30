@@ -63,6 +63,116 @@ namespace KIngME_.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Adilson_Konrad {
+            get {
+                object obj = ResourceManager.GetObject("Adilson Konrad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Beatriz_Paiva {
+            get {
+                object obj = ResourceManager.GetObject("Beatriz Paiva", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Claroo {
+            get {
+                object obj = ResourceManager.GetObject("Claroo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Douglas_Baquiao {
+            get {
+                object obj = ResourceManager.GetObject("Douglas Baquiao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eduardo_Takeo {
+            get {
+                object obj = ResourceManager.GetObject("Eduardo Takeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guilherme_Rey {
+            get {
+                object obj = ResourceManager.GetObject("Guilherme Rey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kelly_Kiyumi {
+            get {
+                object obj = ResourceManager.GetObject("Kelly Kiyumi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Leonardo_Takuno {
+            get {
+                object obj = ResourceManager.GetObject("Leonardo Takuno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mario_toledo {
+            get {
+                object obj = ResourceManager.GetObject("Mario toledo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quintas {
+            get {
+                object obj = ResourceManager.GetObject("Quintas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ranulfo {
+            get {
+                object obj = ResourceManager.GetObject("Ranulfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tabuleiro {
             get {
                 object obj = ResourceManager.GetObject("Tabuleiro", resourceCulture);
@@ -76,6 +186,16 @@ namespace KIngME_.Properties {
         internal static System.Drawing.Bitmap Tabuleiro1 {
             get {
                 object obj = ResourceManager.GetObject("Tabuleiro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Toshio {
+            get {
+                object obj = ResourceManager.GetObject("Toshio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

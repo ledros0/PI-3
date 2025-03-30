@@ -99,5 +99,41 @@
   <ItemGroup>
     <None Include="Resources\Tabuleiro.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toshio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ranulfo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quintas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario toledo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leonardo Takuno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kelly Kiyumi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guilherme Rey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eduardo Takeo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Douglas Baquiao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Claroo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beatriz Paiva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adilson Konrad.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
