@@ -103,21 +103,22 @@ namespace KIngME_
                 int y = 0;
 
                 for (int j = 0; j < 4; j++) // Verificação do espaço disponível para o personagem no setor 
-                {                           // e determinação das coordenadas onde o label irá
-                    if (setor_disponivel[setor, j] == false && setor != 10)
-                    {
-                        setor_disponivel[setor, j] = true;
-                        x = j * 116;                        
-                        y = 720 - (setor * 120); 
-                        break;
-                    }
-                    else if (setor == 10)
+                {
+                    if (setor == 10)
                     {
                         setor_disponivel[6, j] = true;
                         x = j * 116;
                         y = 720 - (6 * 120);
                         break;
                     }
+                    else if (setor_disponivel[setor, j] == false && setor != 10)
+                    {
+                        setor_disponivel[setor, j] = true;
+                        x = j * 116;                        
+                        y = 720 - (setor * 120); 
+                        break;
+                    }// e determinação das coordenadas onde o label irá
+
                 }
 
                 switch (personagem) // Qual label será posicionado nessas coordenadas
