@@ -58,7 +58,6 @@ namespace KIngME_
 
         private void button3_Click(object sender, EventArgs e)
         {
-
             string verificar = Jogo.VerificarVez(idpartida);
             string[] jogadorrr = verificar.Split('n');
             string[] idarray = jogadorrr[0].Split(',');
@@ -90,29 +89,38 @@ namespace KIngME_
                 { false, false, false, false },
                 { false, false, false, false },
                 { false, false, false, false },
+                { false, false, false, false },
                 { false, false, false, false }
             };
 
             for (int i = 1; i < verificar_setor.Length; i++)
             {
                 verificar_setor = verificar_setor[i].Split(',');
+                if (verificar_setor[0] == "") return;
                 int setor = Convert.ToInt32(verificar_setor[0]);
                 string personagem = verificar_setor[1];
                 int x = 0;
                 int y = 0;
 
-                for (int j = 0; j < 4; j++)
-                {
-                    if (setor_disponivel[setor, j] == false)
+                for (int j = 0; j < 4; j++) // Verificação do espaço disponível para o personagem no setor 
+                {                           // e determinação das coordenadas onde o label irá
+                    if (setor_disponivel[setor, j] == false && setor != 10)
                     {
                         setor_disponivel[setor, j] = true;
+                        x = j * 116;                        
+                        y = 720 - (setor * 120); 
+                        break;
+                    }
+                    else if (setor == 10)
+                    {
+                        setor_disponivel[6, j] = true;
                         x = j * 116;
-                        y = 600 - (setor * 120);
+                        y = 720 - (6 * 120);
                         break;
                     }
                 }
 
-                switch (personagem)
+                switch (personagem) // Qual label será posicionado nessas coordenadas
                 {
                     case "A\r":
                         lblPersonagemA.Location = new Point(x, y);
@@ -156,17 +164,12 @@ namespace KIngME_
                     default:
                         break;
                 }
+
                 verificar_setor = verificar.Split('\n');
             }
 
             
-            /*Receber o setor, verificar qual personagem se encontra neste setor
-              Criar 1 panel para cada setor
-              Se a posição x1 y1 ja esta ocupada, adicionar personagem na posição x1+40 y1+40 e assim vai dobrando
-              Como verificar o personagem naquele Setor, com a label do mesmo ?
-              Switch case para verificar qual setor esta selecionado   
-              variavel.location para receber e comparar cm aquela q deseja entrar.
-             */
+            
 
         }
 
@@ -178,6 +181,11 @@ namespace KIngME_
         private void lblPersonagemL_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPromover_Click(object sender, EventArgs e)
+        {
+            Jogo.Promover(int.Parse(id_senha_jogador[0]), id_senha_jogador[1], txtPosicionarPersonagem.Text);
         }
     }
 }

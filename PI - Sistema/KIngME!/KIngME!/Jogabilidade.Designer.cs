@@ -61,6 +61,7 @@
             this.lblPersonagemT = new System.Windows.Forms.Label();
             this.lblPersonagemB = new System.Windows.Forms.Label();
             this.lblPersonagemA = new System.Windows.Forms.Label();
+            this.btnPromover = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -255,6 +256,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.lblPersonagemC);
             this.panel1.Controls.Add(this.lblPersonagemH);
             this.panel1.Controls.Add(this.lblPersonagemM);
@@ -268,9 +270,9 @@
             this.panel1.Controls.Add(this.lblPersonagemT);
             this.panel1.Controls.Add(this.lblPersonagemB);
             this.panel1.Controls.Add(this.lblPersonagemA);
-            this.panel1.Location = new System.Drawing.Point(530, 182);
+            this.panel1.Location = new System.Drawing.Point(530, 81);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(464, 722);
+            this.panel1.Size = new System.Drawing.Size(464, 823);
             this.panel1.TabIndex = 82;
             // 
             // lblPersonagemC
@@ -391,11 +393,22 @@
             this.lblPersonagemA.TabIndex = 0;
             this.lblPersonagemA.Text = "Adilson";
             // 
+            // btnPromover
+            // 
+            this.btnPromover.Location = new System.Drawing.Point(99, 190);
+            this.btnPromover.Name = "btnPromover";
+            this.btnPromover.Size = new System.Drawing.Size(75, 23);
+            this.btnPromover.TabIndex = 83;
+            this.btnPromover.Text = "Promover";
+            this.btnPromover.UseVisualStyleBackColor = true;
+            this.btnPromover.Click += new System.EventHandler(this.btnPromover_Click);
+            // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1277, 941);
+            this.Controls.Add(this.btnPromover);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
@@ -463,5 +476,6 @@
         private System.Windows.Forms.Label lblPersonagemE;
         private System.Windows.Forms.Label lblPersonagemK;
         private System.Windows.Forms.Label lblPersonagemT;
+        private System.Windows.Forms.Button btnPromover;
     }
 }
