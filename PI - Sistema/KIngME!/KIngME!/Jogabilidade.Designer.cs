@@ -62,6 +62,10 @@
             this.picPersonagemR = new System.Windows.Forms.PictureBox();
             this.picPersonagemT = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnVotar = new System.Windows.Forms.Button();
+            this.voto = new System.Windows.Forms.Label();
+            this.txtVoto = new System.Windows.Forms.TextBox();
+            this.lblSemvotos = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemB)).BeginInit();
@@ -100,7 +104,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(132, 268);
+            this.label19.Location = new System.Drawing.Point(1400, 83);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(0, 13);
             this.label19.TabIndex = 78;
@@ -108,14 +112,14 @@
             // lblJogadorDaVez
             // 
             this.lblJogadorDaVez.AutoSize = true;
-            this.lblJogadorDaVez.Location = new System.Drawing.Point(129, 223);
+            this.lblJogadorDaVez.Location = new System.Drawing.Point(1397, 38);
             this.lblJogadorDaVez.Name = "lblJogadorDaVez";
             this.lblJogadorDaVez.Size = new System.Drawing.Size(0, 13);
             this.lblJogadorDaVez.TabIndex = 77;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(50, 309);
+            this.button3.Location = new System.Drawing.Point(1318, 124);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 76;
@@ -126,7 +130,7 @@
             // lblJogadorVez
             // 
             this.lblJogadorVez.AutoSize = true;
-            this.lblJogadorVez.Location = new System.Drawing.Point(31, 269);
+            this.lblJogadorVez.Location = new System.Drawing.Point(1291, 83);
             this.lblJogadorVez.Name = "lblJogadorVez";
             this.lblJogadorVez.Size = new System.Drawing.Size(94, 13);
             this.lblJogadorVez.TabIndex = 75;
@@ -135,7 +139,7 @@
             // lblIdVez
             // 
             this.lblIdVez.AutoSize = true;
-            this.lblIdVez.Location = new System.Drawing.Point(26, 224);
+            this.lblIdVez.Location = new System.Drawing.Point(1294, 39);
             this.lblIdVez.Name = "lblIdVez";
             this.lblIdVez.Size = new System.Drawing.Size(96, 13);
             this.lblIdVez.TabIndex = 74;
@@ -434,11 +438,49 @@
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
             // 
+            // btnVotar
+            // 
+            this.btnVotar.Location = new System.Drawing.Point(65, 317);
+            this.btnVotar.Name = "btnVotar";
+            this.btnVotar.Size = new System.Drawing.Size(75, 23);
+            this.btnVotar.TabIndex = 84;
+            this.btnVotar.Text = "Votar";
+            this.btnVotar.UseVisualStyleBackColor = true;
+            this.btnVotar.Click += new System.EventHandler(this.btnVotar_Click);
+            // 
+            // voto
+            // 
+            this.voto.AutoSize = true;
+            this.voto.Location = new System.Drawing.Point(23, 288);
+            this.voto.Name = "voto";
+            this.voto.Size = new System.Drawing.Size(29, 13);
+            this.voto.TabIndex = 85;
+            this.voto.Text = "Voto";
+            // 
+            // txtVoto
+            // 
+            this.txtVoto.Location = new System.Drawing.Point(65, 285);
+            this.txtVoto.Name = "txtVoto";
+            this.txtVoto.Size = new System.Drawing.Size(100, 20);
+            this.txtVoto.TabIndex = 86;
+            // 
+            // lblSemvotos
+            // 
+            this.lblSemvotos.AutoSize = true;
+            this.lblSemvotos.Location = new System.Drawing.Point(26, 255);
+            this.lblSemvotos.Name = "lblSemvotos";
+            this.lblSemvotos.Size = new System.Drawing.Size(0, 13);
+            this.lblSemvotos.TabIndex = 87;
+            // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1277, 941);
+            this.ClientSize = new System.Drawing.Size(1458, 941);
+            this.Controls.Add(this.lblSemvotos);
+            this.Controls.Add(this.txtVoto);
+            this.Controls.Add(this.voto);
+            this.Controls.Add(this.btnVotar);
             this.Controls.Add(this.btnPromover);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -520,5 +562,9 @@
         private System.Windows.Forms.PictureBox picPersonagemC;
         private System.Windows.Forms.PictureBox picPersonagemB;
         private System.Windows.Forms.PictureBox picPersonagemA;
+        private System.Windows.Forms.Button btnVotar;
+        private System.Windows.Forms.Label voto;
+        private System.Windows.Forms.TextBox txtVoto;
+        private System.Windows.Forms.Label lblSemvotos;
     }
 }

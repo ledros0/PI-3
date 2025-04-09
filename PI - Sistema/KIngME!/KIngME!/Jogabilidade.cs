@@ -12,7 +12,7 @@ using KingMeServer;
 namespace KIngME_
 {
     public partial class Jogabilidade : Form
-    {
+    {   
         Form1 form1 = new Form1();
         int contador = 1;
         public int idpartida { get; set; }
@@ -21,6 +21,10 @@ namespace KIngME_
         public Jogabilidade()
         {   
             InitializeComponent();
+           coordenadasPersonagens();
+        }
+        public void coordenadasPersonagens()
+        {
             picPersonagemA.Location = new Point(-300, 0); // Colocar os labels para fora do panel(isso deixa eles "invisiveis")
             picPersonagemB.Location = new Point(-300, 0);
             picPersonagemC.Location = new Point(-300, 0);
@@ -35,28 +39,7 @@ namespace KIngME_
             picPersonagemR.Location = new Point(-300, 0);
             picPersonagemT.Location = new Point(-300, 0);
         }
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            lblFavoritos.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
-        }
-
-        private void btnPosicionar_Click(object sender, EventArgs e)
-        {
-            int idJogador = Convert.ToInt32(id_senha_jogador[0]);
-            string senhaJogador = id_senha_jogador[1];
-            int setor = Convert.ToInt32(txtSetor.Text);
-            string colocar = Jogo.ColocarPersonagem(idJogador, senhaJogador, setor, txtPosicionarPersonagem.Text);
-            if (setor == null || txtPosicionarPersonagem.Text == "\0")
-            {
-                lblErroposicao.Text = colocar;
-            }
-            if (colocar.Substring(0, 4) == "ERRO")
-            {
-                lblErroposicao.Text = colocar;
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        public void verificarVez()
         {
             string verificar = Jogo.VerificarVez(idpartida);
             string[] jogadorrr = verificar.Split('n');
@@ -114,8 +97,8 @@ namespace KIngME_
                     else if (setor_disponivel[setor, j] == false && setor != 10)
                     {
                         setor_disponivel[setor, j] = true;
-                        x = j * 116;                        
-                        y = 720 - (setor * 120); 
+                        x = j * 116;
+                        y = 720 - (setor * 120);
                         break;
                     }
 
@@ -168,10 +151,32 @@ namespace KIngME_
 
                 verificar_setor = verificar.Split('\n');
             }
+        }
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            lblFavoritos.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
+        }
 
-            
-            
+        private void btnPosicionar_Click(object sender, EventArgs e)
+        {
+            int idJogador = Convert.ToInt32(id_senha_jogador[0]);
+            string senhaJogador = id_senha_jogador[1];
+            int setor = Convert.ToInt32(txtSetor.Text);
+            string colocar = Jogo.ColocarPersonagem(idJogador, senhaJogador, setor, txtPosicionarPersonagem.Text);
+            if (setor == null || txtPosicionarPersonagem.Text == "\0")
+            {
+                lblErroposicao.Text = colocar;
+            }
+            if (colocar.Substring(0, 4) == "ERRO")
+            {
+                lblErroposicao.Text = colocar;
+            }
+            verificarVez();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            verificarVez();
         }
 
         private void Jogabilidade_Load(object sender, EventArgs e)
@@ -184,6 +189,24 @@ namespace KIngME_
         private void btnPromover_Click(object sender, EventArgs e)
         {
             Jogo.Promover(int.Parse(id_senha_jogador[0]), id_senha_jogador[1], txtPosicionarPersonagem.Text);
+            verificarVez();
+        }
+
+        int votosN = 3;
+        private void btnVotar_Click(object sender, EventArgs e) {
+            if (txtVoto.Text == "N" && votosN > 0)
+            {
+                votosN--;
+                Jogo.Votar(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], txtVoto.Text);
+                coordenadasPersonagens();
+                verificarVez();
+            }      
+            else 
+            {
+                Jogo.Votar(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], txtVoto.Text);
+                coordenadasPersonagens();
+                verificarVez();
+            }
         }
     }
 }
