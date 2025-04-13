@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button4 = new System.Windows.Forms.Button();
             this.lblErroposicao = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -66,6 +67,7 @@
             this.voto = new System.Windows.Forms.Label();
             this.txtVoto = new System.Windows.Forms.TextBox();
             this.lblSemvotos = new System.Windows.Forms.Label();
+            this.timerVerificarVez = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemB)).BeginInit();
@@ -472,6 +474,11 @@
             this.lblSemvotos.Size = new System.Drawing.Size(0, 13);
             this.lblSemvotos.TabIndex = 87;
             // 
+            // timerVerificarVez
+            // 
+            this.timerVerificarVez.Interval = 2000;
+            this.timerVerificarVez.Tick += new System.EventHandler(this.timerVerificarVez_Tick);
+            // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -566,5 +573,6 @@
         private System.Windows.Forms.Label voto;
         private System.Windows.Forms.TextBox txtVoto;
         private System.Windows.Forms.Label lblSemvotos;
+        private System.Windows.Forms.Timer timerVerificarVez;
     }
 }

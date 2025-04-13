@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,11 +19,17 @@ namespace KIngME_
         public int idpartida { get; set; }
         public string[] id_senha_jogador { get; set; }
 
+        List<string> listaPersonagens = new List<string>(){
+            "A", "B", "C", "D", "E", "G", "H", "K", "L", "M", "Q", "R", "T"
+        };
         public Jogabilidade()
         {   
             InitializeComponent();
            coordenadasPersonagens();
+            timerVerificarVez.Enabled = true;
+           
         }
+        
         public void coordenadasPersonagens()
         {
             picPersonagemA.Location = new Point(-300, 0); // Colocar os labels para fora do panel(isso deixa eles "invisiveis")
@@ -183,9 +190,6 @@ namespace KIngME_
         {
 
         }
-
-        
-
         private void btnPromover_Click(object sender, EventArgs e)
         {
             Jogo.Promover(int.Parse(id_senha_jogador[0]), id_senha_jogador[1], txtPosicionarPersonagem.Text);
@@ -207,6 +211,38 @@ namespace KIngME_
                 coordenadasPersonagens();
                 verificarVez();
             }
+        }
+
+        private void timerVerificarVez_Tick(object sender, EventArgs e)
+        {
+            if (listaPersonagens.Count == 0)
+                return;
+
+            Random r = new Random();
+            int setorAleatorio = r.Next(1, 5);
+            int personagemAleatorio = r.Next(0, listaPersonagens.Count);
+
+            timerVerificarVez.Enabled = false;
+
+            if (id_senha_jogador.Length < 2)
+                return;
+
+            int idJogador = Convert.ToInt32(id_senha_jogador[0]);
+            string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
+
+            int jogador = Convert.ToInt32(jogadorDaVez[0]);
+            string senhaJogador = id_senha_jogador[1];
+
+            if (jogador == Convert.ToInt32(id_senha_jogador[0]))
+            {
+                Jogo.ColocarPersonagem(idJogador, senhaJogador, setorAleatorio,
+                    Convert.ToString(listaPersonagens[personagemAleatorio]));
+                listaPersonagens.RemoveAt(personagemAleatorio);
+            }
+
+            verificarVez();
+            timerVerificarVez.Enabled = true;
+
         }
     }
 }
