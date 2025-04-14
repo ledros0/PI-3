@@ -222,16 +222,7 @@ namespace KIngME_
             int setorAleatorio = r.Next(1, 5);
             int personagemAleatorio = r.Next(0, listaPersonagens.Count);
 
-            string[] verificarPersonagemTabuleiro = Jogo.VerificarVez(idpartida).Replace("\r", "").Split('\n');
-
-            for (int i = 1; i < verificarPersonagemTabuleiro.Length; i++)
-            {
-                string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
-                if (listaPersonagens.Contains(siglaPersonagem[1]))
-                {
-                    listaPersonagens.Remove(siglaPersonagem[1]);
-                }
-            }
+            
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
 
@@ -245,8 +236,19 @@ namespace KIngME_
             {   
                 Jogo.ColocarPersonagem(idJogador, senhaJogador, setorAleatorio,
                 Convert.ToString(listaPersonagens[personagemAleatorio]));
-                listaPersonagens.RemoveAt(personagemAleatorio);
-                
+                listaPersonagens.Remove(listaPersonagens[personagemAleatorio]);            
+            }
+
+            string[] verificarPersonagemTabuleiro = Jogo.VerificarVez(idpartida).Replace("\r", "").Split('\n');
+
+            if (verificarPersonagemTabuleiro[0] == "") return;
+            for (int i = 1; i < verificarPersonagemTabuleiro.Length; i++)
+            {
+                string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
+                if (listaPersonagens.Contains(siglaPersonagem[0]))
+                {
+                    listaPersonagens.Remove(siglaPersonagem[0]);
+                }
             }
 
             verificarVez();

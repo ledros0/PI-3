@@ -36,10 +36,11 @@
               "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
               "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
               "RelativeToolTip": "KIngME!\\Form1.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T21:51:10.12Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -49,7 +50,7 @@
               "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
               "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeToolTip": "KIngME!\\Jogabilidade.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAAAOEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAuwPIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T03:51:19.082Z",
               "IsPinned": true,
@@ -72,7 +73,8 @@
               "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]",
               "RelativeToolTip": "KIngME!\\Jogabilidade.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T03:48:21.701Z"
+              "WhenOpened": "2025-03-22T03:48:21.701Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -83,7 +85,8 @@
               "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs [Design]",
               "RelativeToolTip": "KIngME!\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:40:49.071Z"
+              "WhenOpened": "2025-03-16T22:40:49.071Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },
