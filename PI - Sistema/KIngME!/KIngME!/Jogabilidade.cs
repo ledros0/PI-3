@@ -224,9 +224,6 @@ namespace KIngME_
 
             timerVerificarVez.Enabled = false;
 
-            if (id_senha_jogador.Length < 2)
-                return;
-
             int idJogador = Convert.ToInt32(id_senha_jogador[0]);
             string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
 
