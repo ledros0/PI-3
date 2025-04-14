@@ -222,6 +222,17 @@ namespace KIngME_
             int setorAleatorio = r.Next(1, 5);
             int personagemAleatorio = r.Next(0, listaPersonagens.Count);
 
+            string[] verificarPersonagemTabuleiro = Jogo.VerificarVez(idpartida).Replace("\r", "").Split('\n');
+
+            for (int i = 1; i < verificarPersonagemTabuleiro.Length; i++)
+            {
+                string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
+                if (listaPersonagens.Contains(siglaPersonagem[1]))
+                {
+                    listaPersonagens.Remove(siglaPersonagem[1]);
+                }
+            }
+            //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
 
             int idJogador = Convert.ToInt32(id_senha_jogador[0]);
@@ -231,15 +242,28 @@ namespace KIngME_
             string senhaJogador = id_senha_jogador[1];
 
             if (jogador == Convert.ToInt32(id_senha_jogador[0]))
-            {
+            {   
                 Jogo.ColocarPersonagem(idJogador, senhaJogador, setorAleatorio,
-                    Convert.ToString(listaPersonagens[personagemAleatorio]));
+                Convert.ToString(listaPersonagens[personagemAleatorio]));
                 listaPersonagens.RemoveAt(personagemAleatorio);
+                
             }
 
             verificarVez();
             timerVerificarVez.Enabled = true;
-
+            /* Precisamos receber jogo.verificarVez.
+               Ignoramos a primeira linha e pegamos o segundo de cada linha poterior
+                Exemplo:
+                    123,J,S,
+                    4.A
+                    4.E
+                    3.B 
+                *Precisamos das letras*
+                
+                Após isso removemos da listaPersonagens o que ja foi colocado no tabuleiro.
+                               
+              */
+            
         }
     }
 }
