@@ -18,16 +18,14 @@ namespace KIngME_
         int contador = 1;
         public int idpartida { get; set; }
         public string[] id_senha_jogador { get; set; }
-
-        List<string> listaPersonagens = new List<string>(){
-            "A", "B", "C", "D", "E", "G", "H", "K", "L", "M", "Q", "R", "T"
-        };
+        faseSetup setup;
+        fasePromocao promocao;
+        public string favoritos;
         public Jogabilidade()
         {   
             InitializeComponent();
-           coordenadasPersonagens();
+            coordenadasPersonagens();
             timerVerificarVez.Enabled = true;
-           
         }
         
         public void coordenadasPersonagens()
@@ -159,27 +157,6 @@ namespace KIngME_
                 verificar_setor = verificar.Split('\n');
             }
         }
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            lblFavoritos.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
-        }
-
-        private void btnPosicionar_Click(object sender, EventArgs e)
-        {
-            int idJogador = Convert.ToInt32(id_senha_jogador[0]);
-            string senhaJogador = id_senha_jogador[1];
-            int setor = Convert.ToInt32(txtSetor.Text);
-            string colocar = Jogo.ColocarPersonagem(idJogador, senhaJogador, setor, txtPosicionarPersonagem.Text);
-            if (setor == null || txtPosicionarPersonagem.Text == "\0")
-            {
-                lblErroposicao.Text = colocar;
-            }
-            if (colocar.Substring(0, 4) == "ERRO")
-            {
-                lblErroposicao.Text = colocar;
-            }
-            verificarVez();
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -188,7 +165,9 @@ namespace KIngME_
 
         private void Jogabilidade_Load(object sender, EventArgs e)
         {
-
+            setup = new faseSetup(id_senha_jogador, idpartida);
+            promocao = new fasePromocao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1],favoritos);
+            favoritos = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
         }
         private void btnPromover_Click(object sender, EventArgs e)
         {
@@ -215,42 +194,34 @@ namespace KIngME_
 
         private void timerVerificarVez_Tick(object sender, EventArgs e)
         {
-            if (listaPersonagens.Count == 0)
-                return;
 
-            Random r = new Random();
-            int setorAleatorio = r.Next(1, 5);
-            int personagemAleatorio = r.Next(0, listaPersonagens.Count);
+            string[] verificarLinhaUm = Jogo.VerificarVez(idpartida).Replace("\r","").Split('\n') ;
 
-            
+            string[] verificarFase = verificarLinhaUm[0].Split(',');
+                
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
 
-            int idJogador = Convert.ToInt32(id_senha_jogador[0]);
             string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
-
             int jogador = Convert.ToInt32(jogadorDaVez[0]);
-            string senhaJogador = id_senha_jogador[1];
 
             if (jogador == Convert.ToInt32(id_senha_jogador[0]))
-            {   
-                Jogo.ColocarPersonagem(idJogador, senhaJogador, setorAleatorio,
-                Convert.ToString(listaPersonagens[personagemAleatorio]));
-                listaPersonagens.Remove(listaPersonagens[personagemAleatorio]);            
-            }
-
-            string[] verificarPersonagemTabuleiro = Jogo.VerificarVez(idpartida).Replace("\r", "").Split('\n');
-
-            if (verificarPersonagemTabuleiro[0] == "") return;
-            for (int i = 1; i < verificarPersonagemTabuleiro.Length; i++)
             {
-                string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
-                if (listaPersonagens.Contains(siglaPersonagem[0]))
+                switch (verificarFase[3])
                 {
-                    listaPersonagens.Remove(siglaPersonagem[0]);
+                    case "S":
+                        setup.posicionarPersonagem();
+                        break;
+
+                    case "P":
+                        promocao.posicionar();
+                        break;
+
+                    case "V":
+
+                        break;
                 }
             }
-
             verificarVez();
             timerVerificarVez.Enabled = true;
             /* Precisamos receber jogo.verificarVez.

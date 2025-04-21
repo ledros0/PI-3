@@ -29,17 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button4 = new System.Windows.Forms.Button();
             this.lblErroposicao = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lblJogadorDaVez = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.lblJogadorVez = new System.Windows.Forms.Label();
             this.lblIdVez = new System.Windows.Forms.Label();
-            this.btnPosicionar = new System.Windows.Forms.Button();
-            this.txtSetor = new System.Windows.Forms.TextBox();
             this.txtPosicionarPersonagem = new System.Windows.Forms.TextBox();
-            this.lblSetor = new System.Windows.Forms.Label();
             this.lblPersonagem = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -84,16 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(26, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 80;
-            this.button4.Text = "Favorito";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // lblErroposicao
             // 
@@ -147,38 +133,12 @@
             this.lblIdVez.TabIndex = 74;
             this.lblIdVez.Text = "Id Jogador da Vez:";
             // 
-            // btnPosicionar
-            // 
-            this.btnPosicionar.Location = new System.Drawing.Point(99, 155);
-            this.btnPosicionar.Name = "btnPosicionar";
-            this.btnPosicionar.Size = new System.Drawing.Size(75, 23);
-            this.btnPosicionar.TabIndex = 73;
-            this.btnPosicionar.Text = "Posicionar";
-            this.btnPosicionar.UseVisualStyleBackColor = true;
-            this.btnPosicionar.Click += new System.EventHandler(this.btnPosicionar_Click);
-            // 
-            // txtSetor
-            // 
-            this.txtSetor.Location = new System.Drawing.Point(99, 124);
-            this.txtSetor.Name = "txtSetor";
-            this.txtSetor.Size = new System.Drawing.Size(100, 20);
-            this.txtSetor.TabIndex = 72;
-            // 
             // txtPosicionarPersonagem
             // 
             this.txtPosicionarPersonagem.Location = new System.Drawing.Point(99, 82);
             this.txtPosicionarPersonagem.Name = "txtPosicionarPersonagem";
             this.txtPosicionarPersonagem.Size = new System.Drawing.Size(100, 20);
             this.txtPosicionarPersonagem.TabIndex = 71;
-            // 
-            // lblSetor
-            // 
-            this.lblSetor.AutoSize = true;
-            this.lblSetor.Location = new System.Drawing.Point(47, 124);
-            this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(38, 13);
-            this.lblSetor.TabIndex = 70;
-            this.lblSetor.Text = "Setor: ";
             // 
             // lblPersonagem
             // 
@@ -249,7 +209,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(132, 21);
+            this.label16.Location = new System.Drawing.Point(70, 21);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 13);
             this.label16.TabIndex = 64;
@@ -476,7 +436,7 @@
             // 
             // timerVerificarVez
             // 
-            this.timerVerificarVez.Interval = 2000;
+            this.timerVerificarVez.Interval = 900;
             this.timerVerificarVez.Tick += new System.EventHandler(this.timerVerificarVez_Tick);
             // 
             // Jogabilidade
@@ -491,17 +451,13 @@
             this.Controls.Add(this.btnPromover);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.lblErroposicao);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.lblJogadorDaVez);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblJogadorVez);
             this.Controls.Add(this.lblIdVez);
-            this.Controls.Add(this.btnPosicionar);
-            this.Controls.Add(this.txtSetor);
             this.Controls.Add(this.txtPosicionarPersonagem);
-            this.Controls.Add(this.lblSetor);
             this.Controls.Add(this.lblPersonagem);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.listBox1);
@@ -534,18 +490,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblErroposicao;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lblJogadorDaVez;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lblJogadorVez;
         private System.Windows.Forms.Label lblIdVez;
-        private System.Windows.Forms.Button btnPosicionar;
-        private System.Windows.Forms.TextBox txtSetor;
         private System.Windows.Forms.TextBox txtPosicionarPersonagem;
-        private System.Windows.Forms.Label lblSetor;
         private System.Windows.Forms.Label lblPersonagem;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ListBox listBox1;

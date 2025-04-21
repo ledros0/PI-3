@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|f:\\pi3\\pi-3\\pi - sistema\\kingme!\\kingme!\\fasepromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\fasepromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|f:\\pi3\\pi-3\\pi - sistema\\kingme!\\kingme!\\fasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\fasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,36 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
-              "RelativeToolTip": "KIngME!\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T21:51:10.12Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Jogabilidade.cs",
-              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs*",
-              "RelativeToolTip": "KIngME!\\Jogabilidade.cs*",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAuwPAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T03:51:19.082Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -67,26 +39,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Jogabilidade.cs [Design]",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
+              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
+              "RelativeToolTip": "KIngME!\\Form1.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:51:10.12Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Jogabilidade.cs",
               "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]*",
-              "RelativeToolTip": "KIngME!\\Jogabilidade.cs [Design]*",
+              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
+              "RelativeToolTip": "KIngME!\\Jogabilidade.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T03:48:21.701Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-22T03:51:19.082Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fasePromocao.cs",
+              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\fasePromocao.cs",
+              "RelativeDocumentMoniker": "KIngME!\\fasePromocao.cs",
+              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\fasePromocao.cs",
+              "RelativeToolTip": "KIngME!\\fasePromocao.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:30:21.696Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs [Design]",
-              "RelativeToolTip": "KIngME!\\Form1.cs [Design]",
+              "Title": "faseSetup.cs",
+              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\faseSetup.cs",
+              "RelativeDocumentMoniker": "KIngME!\\faseSetup.cs",
+              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\faseSetup.cs",
+              "RelativeToolTip": "KIngME!\\faseSetup.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:40:49.071Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-21T00:38:55.823Z",
+              "EditorCaption": ""
             }
           ]
         },
