@@ -21,6 +21,7 @@ namespace KIngME_
         faseSetup setup;
         fasePromocao promocao;
         public string favoritos;
+        votacao votoo;
         public Jogabilidade()
         {   
             InitializeComponent();
@@ -47,6 +48,7 @@ namespace KIngME_
         public void verificarVez()
         {
             string verificar = Jogo.VerificarVez(idpartida);
+            string[] rei = verificar.Replace("\r", "").Split('\n');
             string[] jogadorrr = verificar.Split('n');
             string[] idarray = jogadorrr[0].Split(',');
             string id = idarray[0];
@@ -166,8 +168,14 @@ namespace KIngME_
         private void Jogabilidade_Load(object sender, EventArgs e)
         {
             setup = new faseSetup(id_senha_jogador, idpartida);
-            promocao = new fasePromocao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1],favoritos);
+
+            promocao = new fasePromocao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], "");
+
             favoritos = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
+
+            promocao.AtualizarFavoritos(favoritos);
+
+            votoo = new votacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
         }
         private void btnPromover_Click(object sender, EventArgs e)
         {
@@ -218,7 +226,7 @@ namespace KIngME_
                         break;
 
                     case "V":
-
+                        votoo.Voto();
                         break;
                 }
             }

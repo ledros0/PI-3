@@ -7,18 +7,20 @@ using KingMeServer;
 
 namespace KIngME_
 {
-    public class fasePromocao
+    public  class fasePromocao
     {
-        int idJogador;
-        string senhaJogador;
-        string favoritos;
+        protected int idJogador;
+        protected string senhaJogador;
+        protected string favoritos;
         
         public fasePromocao(int idJogador,string senhaJogador,string favoritos) {
             this.idJogador = idJogador;
             this.senhaJogador = senhaJogador;
-            this.favoritos = favoritos;
+            this.favoritos = favoritos; 
         }
-  
+
+        public void AtualizarFavoritos(string favsNovos) => this.favoritos = favsNovos;
+
         public void posicionar()
         {   
             Random r = new Random();
