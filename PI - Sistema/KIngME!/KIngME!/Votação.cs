@@ -24,7 +24,7 @@ namespace KIngME_
             string verificarRei = Jogo.VerificarVez(idPartida);
             string[] rei = verificarRei.Replace("\r", "").Split('\n');
 
-            string[] dadosRei = rei[rei.Length - 1].Split(',');
+            string[] dadosRei = rei[rei.Length - 2].Split(',');
 
             string[] dadosCorretos = dadosRei.Select(x => x.Trim()).ToArray();
             string[] letrasFavoritos = favoritos.Select(c => c.ToString()).ToArray();

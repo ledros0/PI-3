@@ -230,6 +230,7 @@ namespace KIngME_
                         break;
                 }
             }
+            coordenadasPersonagens();
             verificarVez();
             timerVerificarVez.Enabled = true;
             /* Precisamos receber jogo.verificarVez.

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\win\\source\\repos\\pi-3\\pi - sistema\\kingme!\\kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\win\\source\\repos\\pi-3\\pi - sistema\\kingme!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\win\\source\\repos\\pi-3\\pi - sistema\\kingme!\\kingme!\\fasepromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\fasepromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\win\\source\\repos\\pi-3\\pi - sistema\\kingme!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\win\\source\\repos\\pi-3\\pi - sistema\\kingme!\\kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -56,29 +56,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Jogabilidade.cs",
               "DocumentMoniker": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
-              "RelativeToolTip": "KIngME!\\Jogabilidade.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAAUwMMAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs*",
+              "RelativeToolTip": "KIngME!\\Jogabilidade.cs*",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAAOcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T03:51:19.082Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Vota\u00E7\u00E3o.cs",
-              "DocumentMoniker": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Vota\u00E7\u00E3o.cs",
-              "ToolTip": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs*",
-              "RelativeToolTip": "KIngME!\\Vota\u00E7\u00E3o.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T18:08:55.91Z",
               "EditorCaption": ""
             },
             {
@@ -92,6 +79,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vota\u00E7\u00E3o.cs",
+              "DocumentMoniker": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Vota\u00E7\u00E3o.cs",
+              "ToolTip": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
+              "RelativeToolTip": "KIngME!\\Vota\u00E7\u00E3o.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:08:55.91Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -125,8 +125,8 @@
               "Title": "Jogabilidade.cs [Design]",
               "DocumentMoniker": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]",
-              "RelativeToolTip": "KIngME!\\Jogabilidade.cs [Design]",
+              "ToolTip": "C:\\Users\\win\\source\\Repos\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]*",
+              "RelativeToolTip": "KIngME!\\Jogabilidade.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T03:48:21.701Z",
               "EditorCaption": " [Design]"
