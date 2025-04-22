@@ -29,7 +29,8 @@ namespace KIngME_
             string[] dadosCorretos = dadosRei.Select(x => x.Trim()).ToArray();
             string[] letrasFavoritos = favoritos.Select(c => c.ToString()).ToArray();
 
-            for (int i = 0; i < letrasFavoritos.Length; i++) {
+            for (int i = 0; i < letrasFavoritos.Length - 2; i++) 
+            {
 
                 if (dadosCorretos[1] == letrasFavoritos[i])
                 {
@@ -37,7 +38,7 @@ namespace KIngME_
                     break;
                 }
 
-                if (i == letrasFavoritos.Length - 1)
+                if (i == letrasFavoritos.Length - 3)
                 {
                     QvotosN--;
                     Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "N");
