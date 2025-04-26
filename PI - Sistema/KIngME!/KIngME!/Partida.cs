@@ -7,25 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using KingMeServer;
 
 namespace KIngME_
 {
-    public partial class Partida: Form
+    public partial class Partida : Form
     {
-        int idJogador;
-        string senhaJogador;
-
-        public Partida(int idJogador, string senhaJogador)
+        public Partida()
         {
             InitializeComponent();
-            this.idJogador = idJogador;
-            this.senhaJogador = senhaJogador;
-        }
-
-        private void btnCartas_Click(object sender, EventArgs e)
-        {
-            lblCartas.Text = $"Cartas: {Jogo.ListarCartas(idJogador, senhaJogador)}";
         }
     }
 }

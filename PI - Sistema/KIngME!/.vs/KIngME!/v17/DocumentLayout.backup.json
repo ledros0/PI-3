@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\",
+  "WorkspaceRootPath": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|f:\\pi3\\pi-3\\pi - sistema\\kingme!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\lucas\\documents\\github\\pi 3\\pi-3\\pi - sistema\\kingme!\\kingme!\\lobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\lobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\lucas\\documents\\github\\pi 3\\pi-3\\pi - sistema\\kingme!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\lucas\\documents\\github\\pi 3\\pi-3\\pi - sistema\\kingme!\\kingme!\\lobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\lobby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\lucas\\documents\\github\\pi 3\\pi-3\\pi - sistema\\kingme!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,35 +34,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
-              "RelativeToolTip": "KIngME!\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Jogabilidade.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
+              "ToolTip": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
+              "RelativeToolTip": "KIngME!\\Jogabilidade.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAALkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T21:51:10.12Z",
+              "WhenOpened": "2025-03-22T03:51:19.082Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Jogabilidade.cs",
-              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
-              "RelativeToolTip": "KIngME!\\Jogabilidade.cs",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAuwPIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
+              "ToolTip": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
+              "RelativeToolTip": "KIngME!\\Form1.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwC8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T03:51:19.082Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-04-25T23:02:16.365Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lobby.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Lobby.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Lobby.cs",
+              "ToolTip": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Lobby.cs",
+              "RelativeToolTip": "KIngME!\\Lobby.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T23:01:35.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lobby.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Lobby.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Lobby.cs",
+              "ToolTip": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Lobby.cs [Design]",
+              "RelativeToolTip": "KIngME!\\Lobby.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T22:53:49.656Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -65,27 +97,31 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Jogabilidade.cs [Design]",
-              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]",
-              "RelativeToolTip": "KIngME!\\Jogabilidade.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
+              "ToolTip": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs [Design]",
+              "RelativeToolTip": "KIngME!\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T03:48:21.701Z",
+              "WhenOpened": "2025-03-16T22:40:49.071Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs",
-              "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
-              "ToolTip": "F:\\Pi3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Form1.cs [Design]",
-              "RelativeToolTip": "KIngME!\\Form1.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "Jogabilidade.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
+              "ToolTip": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\PI - Sistema\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]",
+              "RelativeToolTip": "KIngME!\\Jogabilidade.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:40:49.071Z",
+              "WhenOpened": "2025-03-22T03:48:21.701Z",
               "EditorCaption": " [Design]"
             }
           ]
