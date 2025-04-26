@@ -26,7 +26,6 @@ namespace KIngME_
             InitializeComponent();
             cbListarOpcoes.SelectedIndex = 0;
         }
-
         private void btnListarPartidas_Click(object sender, EventArgs e)
         {
             string RetornoPartidas = cbListarOpcoes.SelectedItem.ToString();
@@ -47,8 +46,7 @@ namespace KIngME_
                     break;
 
             }
-
-
+ 
             RetornoPartidas = RetornoPartidas.Replace("\r", "");
             RetornoPartidas = RetornoPartidas.Substring(0, RetornoPartidas.Length - 1);
             string[] Partidas = RetornoPartidas.Split('\n');
@@ -86,6 +84,7 @@ namespace KIngME_
             string[] jogadores = ListaDeJogadores.Split('\n');
 
             lbListarJogadores.Items.Clear();
+
             for (int i = 0; i < jogadores.Length; i++)
             {
                 lbListarJogadores.Items.Add(jogadores[i]);

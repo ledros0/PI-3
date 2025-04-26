@@ -14,8 +14,6 @@ namespace KIngME_
 {
     public partial class Jogabilidade : Form
     {   
-        Form1 form1 = new Form1();
-        int contador = 1;
         public int idpartida { get; set; }
         public string[] id_senha_jogador { get; set; }
 
@@ -253,18 +251,7 @@ namespace KIngME_
 
             verificarVez();
             timerVerificarVez.Enabled = true;
-            /* Precisamos receber jogo.verificarVez.
-               Ignoramos a primeira linha e pegamos o segundo de cada linha poterior
-                Exemplo:
-                    123,J,S,
-                    4.A
-                    4.E
-                    3.B 
-                *Precisamos das letras*
-                
-                Após isso removemos da listaPersonagens o que ja foi colocado no tabuleiro.
-                               
-              */
+  
             
         }
     }
