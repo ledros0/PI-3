@@ -64,6 +64,7 @@
             this.txtVoto = new System.Windows.Forms.TextBox();
             this.lblSemvotos = new System.Windows.Forms.Label();
             this.timerVerificarVez = new System.Windows.Forms.Timer(this.components);
+            this.lblfim = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemB)).BeginInit();
@@ -439,11 +440,21 @@
             this.timerVerificarVez.Interval = 900;
             this.timerVerificarVez.Tick += new System.EventHandler(this.timerVerificarVez_Tick);
             // 
+            // lblfim
+            // 
+            this.lblfim.AutoSize = true;
+            this.lblfim.Location = new System.Drawing.Point(48, 124);
+            this.lblfim.Name = "lblfim";
+            this.lblfim.Size = new System.Drawing.Size(35, 13);
+            this.lblfim.TabIndex = 88;
+            this.lblfim.Text = "label1";
+            // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1458, 941);
+            this.Controls.Add(this.lblfim);
             this.Controls.Add(this.lblSemvotos);
             this.Controls.Add(this.txtVoto);
             this.Controls.Add(this.voto);
@@ -525,5 +536,6 @@
         private System.Windows.Forms.TextBox txtVoto;
         private System.Windows.Forms.Label lblSemvotos;
         private System.Windows.Forms.Timer timerVerificarVez;
+        private System.Windows.Forms.Label lblfim;
     }
 }

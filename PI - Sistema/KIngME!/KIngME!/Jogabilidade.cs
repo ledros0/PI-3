@@ -22,6 +22,7 @@ namespace KIngME_
         fasePromocao promocao;
         public string favoritos;
         votacao votoo;
+        verificarVezes verificarVezes;
         public Jogabilidade()
         {   
             InitializeComponent();
@@ -47,30 +48,10 @@ namespace KIngME_
         }
         public void verificarVez()
         {
+            lblJogadorDaVez.Text = verificarVezes.verificarNomeJogadorVez(idpartida);
+            label19.Text = verificarVezes.verificarGlobal(idpartida);
+
             string verificar = Jogo.VerificarVez(idpartida);
-            string[] rei = verificar.Replace("\r", "").Split('\n');
-            string[] jogadorrr = verificar.Split('n');
-            string[] idarray = jogadorrr[0].Split(',');
-            string id = idarray[0];
-            lblJogadorDaVez.Text = idarray[0];
-
-            string ListadeJogadores = Jogo.ListarJogadores(idpartida);
-            ListadeJogadores = ListadeJogadores.Replace("\r", "");
-            string[] jogadores = ListadeJogadores.Split('\n');
-
-            for (int i = 0; i < jogadores.Length; i++)
-            {
-                int virgula = jogadores[i].IndexOf(','); //buscar primeira virgula no array
-                if (virgula == -1) continue; // Se não encontrar vírgula, pula para o próximo
-                string antesVirgula = jogadores[i].Substring(0, virgula);
-
-                if (id == antesVirgula)
-                {
-                    string[] dadosJogador = jogadores[i].Split(',');
-                    label19.Text = dadosJogador[1]; // Nome do jogador
-                }
-            }
-
             string[] verificar_setor = verificar.Split('\n');
 
             bool[,] setor_disponivel = new bool[,] { // Inicializa uma matriz de booleano para saber qual posição está ocupada
@@ -176,6 +157,10 @@ namespace KIngME_
             promocao.AtualizarFavoritos(favoritos);
 
             votoo = new votacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
+           
+            verificarVezes = new verificarVezes();
+
+            //lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_
         }
         private void btnPromover_Click(object sender, EventArgs e)
         {
@@ -226,7 +211,12 @@ namespace KIngME_
                         break;
 
                     case "V":
+                        setup.removerTodaLista();
                         votoo.Voto();
+                        setup.reescreverLista();
+                        break;
+                    case "E":
+                        lblfim.Text = "Fim de jogo";
                         break;
                 }
             }

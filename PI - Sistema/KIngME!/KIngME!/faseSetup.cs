@@ -17,12 +17,28 @@ using KingMeServer;
         this.idSenhaJogador = idSenhaJogador;
         this.idpartida = idPartida;
        }
-        
-    public void posicionarPersonagem()
+    public void removerTodaLista()
     {
-        if (listaPersonagens.Count == 0)
-            return;
-
+        listaPersonagens.Clear();
+    }
+    public void reescreverLista()
+    {
+        listaPersonagens.Add("A");
+        listaPersonagens.Add("B");
+        listaPersonagens.Add("C");
+        listaPersonagens.Add("D");
+        listaPersonagens.Add("E");
+        listaPersonagens.Add("G");
+        listaPersonagens.Add("H");
+        listaPersonagens.Add("K");
+        listaPersonagens.Add("L");
+        listaPersonagens.Add("M");
+        listaPersonagens.Add("Q");
+        listaPersonagens.Add("R");
+        listaPersonagens.Add("T");
+    }
+    public void jogarPersonagem()
+    {
         Random r = new Random();
         int setorAleatorio = r.Next(1, 5);
         int personagemAleatorio = r.Next(0, listaPersonagens.Count);
@@ -30,26 +46,45 @@ using KingMeServer;
         int idJogador = Convert.ToInt32(idSenhaJogador[0]);
         string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
 
-       
+
         string senhaJogador = idSenhaJogador[1];
 
-        
-            Jogo.ColocarPersonagem(idJogador, senhaJogador, setorAleatorio,
-            Convert.ToString(listaPersonagens[personagemAleatorio]));
-            listaPersonagens.Remove(listaPersonagens[personagemAleatorio]);
-        
+
+        Jogo.ColocarPersonagem(idJogador, senhaJogador, setorAleatorio,
+        Convert.ToString(listaPersonagens[personagemAleatorio]));
+    }
+    public void posicionarPersonagem()
+    {
+        if (listaPersonagens.Count == 0)
+            return;
 
         string[] verificarPersonagemTabuleiro = Jogo.VerificarVez(idpartida).Replace("\r", "").Split('\n');
 
-        if (verificarPersonagemTabuleiro[0] == "") return;
-        for (int i = 1; i < verificarPersonagemTabuleiro.Length; i++)
+        if (!(verificarPersonagemTabuleiro[1] == ""))
         {
-            string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
-            if (listaPersonagens.Contains(siglaPersonagem[0]))
+            for (int i = 1; i < verificarPersonagemTabuleiro.Length; i++)
             {
-                listaPersonagens.Remove(siglaPersonagem[0]);
+                string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
+                if (siglaPersonagem.Length == 1)
+                {
+                    continue;
+                }
+                else
+                {
+                    if (listaPersonagens.Contains(siglaPersonagem[1]))
+                    {
+                        listaPersonagens.Remove(siglaPersonagem[1]);
+                    }
+                }
+                //implementar estratégia de posicionamento
             }
+            jogarPersonagem();
         }
+        else
+        {
+            jogarPersonagem();
+        }
+
     }
 }
 
