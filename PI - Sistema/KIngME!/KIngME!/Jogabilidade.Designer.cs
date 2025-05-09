@@ -36,18 +36,20 @@
             this.button3 = new System.Windows.Forms.Button();
             this.lblJogadorVez = new System.Windows.Forms.Label();
             this.lblIdVez = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.btnPosicionar = new System.Windows.Forms.Button();
             this.txtSetor = new System.Windows.Forms.TextBox();
             this.txtPosicionarPersonagem = new System.Windows.Forms.TextBox();
             this.lblSetor = new System.Windows.Forms.Label();
             this.lblPersonagem = new System.Windows.Forms.Label();
+=======
+>>>>>>> Stashed changes
             this.label17 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lbListaDePersonagens = new System.Windows.Forms.ListBox();
             this.label16 = new System.Windows.Forms.Label();
             this.lblFavoritos = new System.Windows.Forms.Label();
-            this.btnPromover = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.picPersonagemA = new System.Windows.Forms.PictureBox();
             this.picPersonagemB = new System.Windows.Forms.PictureBox();
@@ -62,12 +64,11 @@
             this.picPersonagemQ = new System.Windows.Forms.PictureBox();
             this.picPersonagemR = new System.Windows.Forms.PictureBox();
             this.picPersonagemT = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnVotar = new System.Windows.Forms.Button();
-            this.voto = new System.Windows.Forms.Label();
-            this.txtVoto = new System.Windows.Forms.TextBox();
+            this.lblfavoritoss = new System.Windows.Forms.PictureBox();
             this.lblSemvotos = new System.Windows.Forms.Label();
             this.timerVerificarVez = new System.Windows.Forms.Timer(this.components);
+            this.lblF = new System.Windows.Forms.Label();
+            this.lblfim = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemB)).BeginInit();
@@ -82,7 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemQ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblfavoritoss)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -147,6 +148,7 @@
             this.lblIdVez.TabIndex = 74;
             this.lblIdVez.Text = "Id Jogador da Vez:";
             // 
+<<<<<<< Updated upstream
             // btnPosicionar
             // 
             this.btnPosicionar.Location = new System.Drawing.Point(99, 155);
@@ -189,6 +191,8 @@
             this.lblPersonagem.TabIndex = 69;
             this.lblPersonagem.Text = "Personagem:";
             // 
+=======
+>>>>>>> Stashed changes
             // label17
             // 
             this.label17.AutoSize = true;
@@ -262,16 +266,6 @@
             this.lblFavoritos.Name = "lblFavoritos";
             this.lblFavoritos.Size = new System.Drawing.Size(0, 13);
             this.lblFavoritos.TabIndex = 63;
-            // 
-            // btnPromover
-            // 
-            this.btnPromover.Location = new System.Drawing.Point(99, 190);
-            this.btnPromover.Name = "btnPromover";
-            this.btnPromover.Size = new System.Drawing.Size(75, 23);
-            this.btnPromover.TabIndex = 83;
-            this.btnPromover.Text = "Promover";
-            this.btnPromover.UseVisualStyleBackColor = true;
-            this.btnPromover.Click += new System.EventHandler(this.btnPromover_Click);
             // 
             // panel1
             // 
@@ -430,41 +424,15 @@
             this.picPersonagemT.TabIndex = 13;
             this.picPersonagemT.TabStop = false;
             // 
-            // pictureBox1
+            // lblfavoritoss
             // 
-            this.pictureBox1.BackgroundImage = global::KIngME_.Properties.Resources.Tabuleiro;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(249, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1001, 917);
-            this.pictureBox1.TabIndex = 81;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnVotar
-            // 
-            this.btnVotar.Location = new System.Drawing.Point(65, 317);
-            this.btnVotar.Name = "btnVotar";
-            this.btnVotar.Size = new System.Drawing.Size(75, 23);
-            this.btnVotar.TabIndex = 84;
-            this.btnVotar.Text = "Votar";
-            this.btnVotar.UseVisualStyleBackColor = true;
-            this.btnVotar.Click += new System.EventHandler(this.btnVotar_Click);
-            // 
-            // voto
-            // 
-            this.voto.AutoSize = true;
-            this.voto.Location = new System.Drawing.Point(23, 288);
-            this.voto.Name = "voto";
-            this.voto.Size = new System.Drawing.Size(29, 13);
-            this.voto.TabIndex = 85;
-            this.voto.Text = "Voto";
-            // 
-            // txtVoto
-            // 
-            this.txtVoto.Location = new System.Drawing.Point(65, 285);
-            this.txtVoto.Name = "txtVoto";
-            this.txtVoto.Size = new System.Drawing.Size(100, 20);
-            this.txtVoto.TabIndex = 86;
+            this.lblfavoritoss.BackgroundImage = global::KIngME_.Properties.Resources.Tabuleiro;
+            this.lblfavoritoss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lblfavoritoss.Location = new System.Drawing.Point(249, 12);
+            this.lblfavoritoss.Name = "lblfavoritoss";
+            this.lblfavoritoss.Size = new System.Drawing.Size(1001, 917);
+            this.lblfavoritoss.TabIndex = 81;
+            this.lblfavoritoss.TabStop = false;
             // 
             // lblSemvotos
             // 
@@ -476,33 +444,59 @@
             // 
             // timerVerificarVez
             // 
+<<<<<<< Updated upstream
             this.timerVerificarVez.Interval = 2000;
+=======
+            this.timerVerificarVez.Interval = 500;
+>>>>>>> Stashed changes
             this.timerVerificarVez.Tick += new System.EventHandler(this.timerVerificarVez_Tick);
+            // 
+            // lblF
+            // 
+            this.lblF.AutoSize = true;
+            this.lblF.Location = new System.Drawing.Point(130, 21);
+            this.lblF.Name = "lblF";
+            this.lblF.Size = new System.Drawing.Size(0, 13);
+            this.lblF.TabIndex = 88;
+            // 
+            // lblfim
+            // 
+            this.lblfim.AutoSize = true;
+            this.lblfim.Location = new System.Drawing.Point(48, 124);
+            this.lblfim.Name = "lblfim";
+            this.lblfim.Size = new System.Drawing.Size(35, 13);
+            this.lblfim.TabIndex = 89;
+            this.lblfim.Text = "label1";
             // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1458, 941);
+            this.Controls.Add(this.lblfim);
+            this.Controls.Add(this.lblF);
             this.Controls.Add(this.lblSemvotos);
-            this.Controls.Add(this.txtVoto);
-            this.Controls.Add(this.voto);
-            this.Controls.Add(this.btnVotar);
-            this.Controls.Add(this.btnPromover);
             this.Controls.Add(this.panel1);
+<<<<<<< Updated upstream
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
+=======
+            this.Controls.Add(this.lblfavoritoss);
+>>>>>>> Stashed changes
             this.Controls.Add(this.lblErroposicao);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.lblJogadorDaVez);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblJogadorVez);
             this.Controls.Add(this.lblIdVez);
+<<<<<<< Updated upstream
             this.Controls.Add(this.btnPosicionar);
             this.Controls.Add(this.txtSetor);
             this.Controls.Add(this.txtPosicionarPersonagem);
             this.Controls.Add(this.lblSetor);
             this.Controls.Add(this.lblPersonagem);
+=======
+>>>>>>> Stashed changes
             this.Controls.Add(this.label17);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label15);
@@ -527,7 +521,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemQ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblfavoritoss)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -542,19 +536,21 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lblJogadorVez;
         private System.Windows.Forms.Label lblIdVez;
+<<<<<<< Updated upstream
         private System.Windows.Forms.Button btnPosicionar;
         private System.Windows.Forms.TextBox txtSetor;
         private System.Windows.Forms.TextBox txtPosicionarPersonagem;
         private System.Windows.Forms.Label lblSetor;
         private System.Windows.Forms.Label lblPersonagem;
+=======
+>>>>>>> Stashed changes
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ListBox lbListaDePersonagens;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblFavoritos;
-        private System.Windows.Forms.Button btnPromover;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox lblfavoritoss;
         private System.Windows.Forms.PictureBox picPersonagemT;
         private System.Windows.Forms.PictureBox picPersonagemR;
         private System.Windows.Forms.Panel panel1;
@@ -569,10 +565,9 @@
         private System.Windows.Forms.PictureBox picPersonagemC;
         private System.Windows.Forms.PictureBox picPersonagemB;
         private System.Windows.Forms.PictureBox picPersonagemA;
-        private System.Windows.Forms.Button btnVotar;
-        private System.Windows.Forms.Label voto;
-        private System.Windows.Forms.TextBox txtVoto;
         private System.Windows.Forms.Label lblSemvotos;
         private System.Windows.Forms.Timer timerVerificarVez;
+        private System.Windows.Forms.Label lblF;
+        private System.Windows.Forms.Label lblfim;
     }
 }

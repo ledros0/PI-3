@@ -18,10 +18,19 @@ namespace KIngME_
         int contador = 1;
         public int idpartida { get; set; }
         public string[] id_senha_jogador { get; set; }
+<<<<<<< Updated upstream
 
         List<string> listaPersonagens = new List<string>(){
             "A", "B", "C", "D", "E", "G", "H", "K", "L", "M", "Q", "R", "T"
         };
+=======
+        faseSetup setup;
+        fasePromocao promocao;
+        verificarVezes verificarVezes;
+        public string favoritos;
+        votacao votoo;
+        int votosN = 3;
+>>>>>>> Stashed changes
         public Jogabilidade()
         {   
             InitializeComponent();
@@ -48,7 +57,12 @@ namespace KIngME_
         }
         public void verificarVez()
         {
+           
+            lblJogadorDaVez.Text = verificarVezes.verificarNomeJogadorVez(idpartida);
+            label19.Text = verificarVezes.verificarGlobal(idpartida);
+
             string verificar = Jogo.VerificarVez(idpartida);
+<<<<<<< Updated upstream
             string[] jogadorrr = verificar.Split('n');
             string[] idarray = jogadorrr[0].Split(',');
             string id = idarray[0];
@@ -71,6 +85,8 @@ namespace KIngME_
                 }
             }
 
+=======
+>>>>>>> Stashed changes
             string[] verificar_setor = verificar.Split('\n');
 
             bool[,] setor_disponivel = new bool[,] { // Inicializa uma matriz de booleano para saber qual posição está ocupada
@@ -108,9 +124,7 @@ namespace KIngME_
                         y = 720 - (setor * 120);
                         break;
                     }
-
                 }
-
                 switch (personagem) // Qual label será posicionado nessas coordenadas
                 {
                     case "A\r":
@@ -189,30 +203,27 @@ namespace KIngME_
         private void Jogabilidade_Load(object sender, EventArgs e)
         {
 
+<<<<<<< Updated upstream
+=======
+            promocao = new fasePromocao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], "");
+
+            favoritos = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
+
+            promocao.AtualizarFavoritos(favoritos);
+
+            votoo = new votacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
+            
+            verificarVezes = new verificarVezes();
+
+            lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
+>>>>>>> Stashed changes
         }
-        private void btnPromover_Click(object sender, EventArgs e)
+        public string listarNovosFavoritos()
         {
-            Jogo.Promover(int.Parse(id_senha_jogador[0]), id_senha_jogador[1], txtPosicionarPersonagem.Text);
-            verificarVez();
+            favoritos = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
+            return favoritos;
         }
-
-        int votosN = 3;
-        private void btnVotar_Click(object sender, EventArgs e) {
-            if (txtVoto.Text == "N" && votosN > 0)
-            {
-                votosN--;
-                Jogo.Votar(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], txtVoto.Text);
-                coordenadasPersonagens();
-                verificarVez();
-            }      
-            else 
-            {
-                Jogo.Votar(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], txtVoto.Text);
-                coordenadasPersonagens();
-                verificarVez();
-            }
-        }
-
+       
         private void timerVerificarVez_Tick(object sender, EventArgs e)
         {
             if (listaPersonagens.Count == 0)
@@ -222,6 +233,7 @@ namespace KIngME_
             int setorAleatorio = r.Next(1, 5);
             int personagemAleatorio = r.Next(0, listaPersonagens.Count);
 
+<<<<<<< Updated upstream
             
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
@@ -231,6 +243,19 @@ namespace KIngME_
 
             int jogador = Convert.ToInt32(jogadorDaVez[0]);
             string senhaJogador = id_senha_jogador[1];
+=======
+            string[] verificarFase = verificarLinhaUm[0].Split(',');
+
+            int fase = 1;
+            int faseAtual = verificarVezes.verificarFaseDaPartida(idpartida);
+
+          
+
+            //listaPersonagem.contains(nomeDaVariavel)
+            timerVerificarVez.Enabled = false;
+
+            int jogador = Convert.ToInt32(verificarVezes.verificarGlobal(idpartida)) ;
+>>>>>>> Stashed changes
 
             if (jogador == Convert.ToInt32(id_senha_jogador[0]))
             {   
@@ -247,8 +272,28 @@ namespace KIngME_
                 string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
                 if (listaPersonagens.Contains(siglaPersonagem[0]))
                 {
+<<<<<<< Updated upstream
                     listaPersonagens.Remove(siglaPersonagem[0]);
+=======
+                    case "S":
+                        setup.posicionarPersonagem();
+                        break;
+
+                    case "P":
+                        promocao.posicionar();
+                        break;
+
+                    case "V":
+                        setup.removerTodaLista();
+                        votoo.Voto();
+                        setup.reescreverLista();
+                        break;
+                    case "E":
+                        lblfim.Text = "Fim de jogo";
+                        break;
+>>>>>>> Stashed changes
                 }
+
             }
 
             verificarVez();
