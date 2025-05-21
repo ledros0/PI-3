@@ -536,14 +536,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lblJogadorVez;
         private System.Windows.Forms.Label lblIdVez;
-<<<<<<< Updated upstream
-        private System.Windows.Forms.Button btnPosicionar;
-        private System.Windows.Forms.TextBox txtSetor;
-        private System.Windows.Forms.TextBox txtPosicionarPersonagem;
-        private System.Windows.Forms.Label lblSetor;
-        private System.Windows.Forms.Label lblPersonagem;
-=======
->>>>>>> Stashed changes
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label15;
