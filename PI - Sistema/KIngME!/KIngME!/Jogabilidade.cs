@@ -18,19 +18,18 @@ namespace KIngME_
         int contador = 1;
         public int idpartida { get; set; }
         public string[] id_senha_jogador { get; set; }
-<<<<<<< Updated upstream
 
         List<string> listaPersonagens = new List<string>(){
             "A", "B", "C", "D", "E", "G", "H", "K", "L", "M", "Q", "R", "T"
         };
-=======
+
         faseSetup setup;
         fasePromocao promocao;
         verificarVezes verificarVezes;
         public string favoritos;
         votacao votoo;
         int votosN = 3;
->>>>>>> Stashed changes
+
         public Jogabilidade()
         {   
             InitializeComponent();
@@ -62,7 +61,7 @@ namespace KIngME_
             label19.Text = verificarVezes.verificarGlobal(idpartida);
 
             string verificar = Jogo.VerificarVez(idpartida);
-<<<<<<< Updated upstream
+
             string[] jogadorrr = verificar.Split('n');
             string[] idarray = jogadorrr[0].Split(',');
             string id = idarray[0];
@@ -85,8 +84,7 @@ namespace KIngME_
                 }
             }
 
-=======
->>>>>>> Stashed changes
+
             string[] verificar_setor = verificar.Split('\n');
 
             bool[,] setor_disponivel = new bool[,] { // Inicializa uma matriz de booleano para saber qual posição está ocupada
@@ -203,8 +201,7 @@ namespace KIngME_
         private void Jogabilidade_Load(object sender, EventArgs e)
         {
 
-<<<<<<< Updated upstream
-=======
+
             promocao = new fasePromocao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], "");
 
             favoritos = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
@@ -216,7 +213,7 @@ namespace KIngME_
             verificarVezes = new verificarVezes();
 
             lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
->>>>>>> Stashed changes
+
         }
         public string listarNovosFavoritos()
         {
@@ -232,8 +229,6 @@ namespace KIngME_
             Random r = new Random();
             int setorAleatorio = r.Next(1, 5);
             int personagemAleatorio = r.Next(0, listaPersonagens.Count);
-
-<<<<<<< Updated upstream
             
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
@@ -243,7 +238,7 @@ namespace KIngME_
 
             int jogador = Convert.ToInt32(jogadorDaVez[0]);
             string senhaJogador = id_senha_jogador[1];
-=======
+
             string[] verificarFase = verificarLinhaUm[0].Split(',');
 
             int fase = 1;
@@ -255,7 +250,7 @@ namespace KIngME_
             timerVerificarVez.Enabled = false;
 
             int jogador = Convert.ToInt32(verificarVezes.verificarGlobal(idpartida)) ;
->>>>>>> Stashed changes
+
 
             if (jogador == Convert.ToInt32(id_senha_jogador[0]))
             {   
@@ -272,9 +267,9 @@ namespace KIngME_
                 string[] siglaPersonagem = verificarPersonagemTabuleiro[i].Split(',');
                 if (listaPersonagens.Contains(siglaPersonagem[0]))
                 {
-<<<<<<< Updated upstream
+
                     listaPersonagens.Remove(siglaPersonagem[0]);
-=======
+
                     case "S":
                         setup.posicionarPersonagem();
                         break;
@@ -291,7 +286,7 @@ namespace KIngME_
                     case "E":
                         lblfim.Text = "Fim de jogo";
                         break;
->>>>>>> Stashed changes
+
                 }
 
             }
