@@ -23,10 +23,12 @@ namespace KIngME_
         public string favoritos;
         votacao votoo;
         verificarVezes verificarVezes;
+        int votosN = 3;
         public Jogabilidade()
         {   
             InitializeComponent();
             coordenadasPersonagens();
+            contagemDeVotos();
             timerVerificarVez.Enabled = true;
         }
         
@@ -140,10 +142,19 @@ namespace KIngME_
                 verificar_setor = verificar.Split('\n');
             }
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        public void contagemDeVotos()
         {
-            verificarVez();
+            string listaDeJogadores = Jogo.ListarJogadores(idpartida).Replace("\r","");
+            string[] lista = listaDeJogadores.Split('\n');
+            switch (lista.Length)
+            {
+                case 3:
+                    votosN = 4;
+                    break;
+                case 4:
+                    votosN = 3;
+                    break;
+            }      
         }
 
         private void Jogabilidade_Load(object sender, EventArgs e)
@@ -157,47 +168,21 @@ namespace KIngME_
             promocao.AtualizarFavoritos(favoritos);
 
             votoo = new votacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
-           
+
             verificarVezes = new verificarVezes();
 
-            //lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_
+            lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
         }
-        private void btnPromover_Click(object sender, EventArgs e)
-        {
-            Jogo.Promover(int.Parse(id_senha_jogador[0]), id_senha_jogador[1], txtPosicionarPersonagem.Text);
-            verificarVez();
-        }
-
-        int votosN = 3;
-        private void btnVotar_Click(object sender, EventArgs e) {
-            if (txtVoto.Text == "N" && votosN > 0)
-            {
-                votosN--;
-                Jogo.Votar(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], txtVoto.Text);
-                coordenadasPersonagens();
-                verificarVez();
-            }      
-            else 
-            {
-                Jogo.Votar(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], txtVoto.Text);
-                coordenadasPersonagens();
-                verificarVez();
-            }
-        }
-
         private void timerVerificarVez_Tick(object sender, EventArgs e)
         {
-
             string[] verificarLinhaUm = Jogo.VerificarVez(idpartida).Replace("\r","").Split('\n') ;
 
             string[] verificarFase = verificarLinhaUm[0].Split(',');
-                
+            
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
-
             string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
             int jogador = Convert.ToInt32(jogadorDaVez[0]);
-
             if (jogador == Convert.ToInt32(id_senha_jogador[0]))
             {
                 switch (verificarFase[3])
@@ -214,6 +199,7 @@ namespace KIngME_
                         setup.removerTodaLista();
                         votoo.Voto();
                         setup.reescreverLista();
+                        coordenadasPersonagens();
                         break;
                     case "E":
                         lblfim.Text = "Fim de jogo";
@@ -222,20 +208,12 @@ namespace KIngME_
             }
             coordenadasPersonagens();
             verificarVez();
-            timerVerificarVez.Enabled = true;
-            /* Precisamos receber jogo.verificarVez.
-               Ignoramos a primeira linha e pegamos o segundo de cada linha poterior
-                Exemplo:
-                    123,J,S,
-                    4.A
-                    4.E
-                    3.B 
-                *Precisamos das letras*
-                
-                Após isso removemos da listaPersonagens o que ja foi colocado no tabuleiro.
-                               
-              */
-            
+            timerVerificarVez.Enabled = true; 
+        }
+
+        private void lblvotosN_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

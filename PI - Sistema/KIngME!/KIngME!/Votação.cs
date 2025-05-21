@@ -31,18 +31,25 @@ namespace KIngME_
 
             for (int i = 0; i < letrasFavoritos.Length - 2; i++) 
             {
-
-                if (dadosCorretos[1] == letrasFavoritos[i])
+                if (QvotosN > 0)
                 {
-                    Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "S");
-                    break;
+                    if (dadosCorretos[1] == letrasFavoritos[i])
+                    {
+                        Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "S");                  
+                        break;
+                    }
+                    else if (i == letrasFavoritos.Length - 3)
+                    {
+                        QvotosN--;
+                        Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "N");
+                        QvotosN -= 1;
+                        break;
+                    }
                 }
-
-                if (i == letrasFavoritos.Length - 3)
+                else
                 {
-                    QvotosN--;
-                    Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "N");
-                    break;
+                     Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "S");
+                    break;  
                 }
             }
         }

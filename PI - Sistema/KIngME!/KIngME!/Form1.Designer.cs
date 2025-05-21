@@ -400,13 +400,12 @@
             this.button5.TabIndex = 63;
             this.button5.Text = "Avançar";
             this.button5.UseVisualStyleBackColor = true;
-           
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1267, 843);
+            this.ClientSize = new System.Drawing.Size(703, 658);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.lblErroposicao);
             this.Controls.Add(this.lblerros);

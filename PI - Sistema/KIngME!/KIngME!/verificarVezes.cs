@@ -10,13 +10,11 @@ public class verificarVezes
     public string verificarGlobal(int idPartida)
     {
         string verificar = Jogo.VerificarVez(idPartida);
-        string[] jogadorrr = verificar.Split('n');
+        string[] jogadorrr = verificar.Split('\n');
         string[] idarray = jogadorrr[0].Split(',');
         string id = idarray[0];
         return idarray[0];
     }
-
-
     public string verificarNomeJogadorVez(int idPartida)
     {
         string id = verificarGlobal(idPartida);

@@ -46,7 +46,6 @@ using KingMeServer;
         int idJogador = Convert.ToInt32(idSenhaJogador[0]);
         string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
 
-
         string senhaJogador = idSenhaJogador[1];
 
 
