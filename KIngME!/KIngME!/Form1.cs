@@ -14,17 +14,20 @@ namespace KIngME_
 
     public partial class Form1 : Form
     {
-        
+
         string[] Id_Senha_Jogador;
-        
-        int n; 
+
+        int n;
 
         public string grupo = "Copistas de Durham";
-       
+
+        bool deveContinuarTimer = true;
+        verificarVezes verificarVezes;
         public Form1()
         {
             InitializeComponent();
             cbListarOpcoes.SelectedIndex = 0;
+            timerVerificarStatus.Enabled = true;
         }
 
         private void btnListarPartidas_Click(object sender, EventArgs e)
@@ -106,12 +109,12 @@ namespace KIngME_
         {
             n = Convert.ToInt32(txtIdPartida.Text);
             int idPartida = Convert.ToInt32(txtIdPartida.Text);
-            
+
             string Jogador = Jogo.Entrar(idPartida, txtJogadorNome.Text, txtSenhaEntrarPartida.Text);
 
             Id_Senha_Jogador = Jogador.Split(',');
             //int ID_Jogador = Convert.ToInt32(Id_Senha_Jogador);
-            if (Jogador.Substring(0,4)=="ERRO")
+            if (Jogador.Substring(0, 4) == "ERRO")
             {
                 lblerros.Text = Jogador;
             }
@@ -120,7 +123,7 @@ namespace KIngME_
                 lblIdJogador.Text = Id_Senha_Jogador[0];
                 lblSenhaJogador.Text = Id_Senha_Jogador[1];
             }
-            
+
         }
         private void lblIdJogador_Click(object sender, EventArgs e)
         {
@@ -135,7 +138,9 @@ namespace KIngME_
             Jogabilidade jogar = new Jogabilidade();
             jogar.idpartida = this.n;
             jogar.id_senha_jogador = this.Id_Senha_Jogador;
-            jogar.Show();        
+            jogar.Show();
+            deveContinuarTimer = false;
+
         }
         private void label13_Click(object sender, EventArgs e)
         {
@@ -154,8 +159,45 @@ namespace KIngME_
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            verificarVezes = new verificarVezes();
         }
 
+        private void timerVerificarStatus_Tick(object sender, EventArgs e)
+        {
+            timerVerificarStatus.Enabled = false;
+
+            if (deveContinuarTimer && n > 0)
+            {
+                string statusPrePartida = verificarVezes.verificarStatusPartida(n);
+
+                switch (statusPrePartida)
+                {
+                    case "A":
+                        break;
+
+                    case "J":
+                        // Partida em andamento – inicia o jogo
+                        Jogabilidade jogar = new Jogabilidade();
+                        jogar.idpartida = this.n;
+                        jogar.id_senha_jogador = this.Id_Senha_Jogador;
+                        jogar.Show();
+                        deveContinuarTimer = false;
+                        timerVerificarStatus.Stop();
+                        return;
+
+                    case "E":
+                        break;
+                }
+            }
+
+            if (deveContinuarTimer)
+            {
+                timerVerificarStatus.Enabled = true;
+            }
+            else
+            {
+                timerVerificarStatus.Enabled = false;
+            }
+        }
     }
 }

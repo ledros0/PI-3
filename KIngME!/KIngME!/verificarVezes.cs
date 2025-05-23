@@ -47,5 +47,19 @@ public class verificarVezes
         return Convert.ToInt32(fase[2]);
     }
 
+    public string verificarStatusPartida(int idPartida)
+    {
+        string status = Jogo.ListarPartidas("T");
+        string[] statusPartida = status.Replace("\r", "").Split('\n');
+        for (int i = 0; i < statusPartida.Length - 1; i++)
+        {
+            string[] cortandoStatusPartida = statusPartida[i].Split(',');
+            if (Convert.ToInt32(cortandoStatusPartida[0]) == idPartida)
+            {
+                return cortandoStatusPartida[3];
+            }
+        }
+        return "\0";
+    }
 
 }
