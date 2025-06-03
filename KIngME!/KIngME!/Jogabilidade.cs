@@ -21,14 +21,17 @@ namespace KIngME_
         faseSetup setup;
         fasePromocao promocao;
         public string favoritos;
-        votacao votoo;
+        criarVotacao votar;
         verificarVezes verificarVezes;
         int votosN = 3;
+        Estrategia estrategia;
+
+
         public Jogabilidade()
         {   
             InitializeComponent();
             coordenadasPersonagens();
-            contagemDeVotos();
+            ContagemDeVotos();
             timerVerificarVez.Enabled = true;
         }
         
@@ -81,7 +84,7 @@ namespace KIngME_
                     {
                         setor_disponivel[6, j] = true;
                         x = j * 116;
-                        y = 720 - (6 * 120);
+                        y = 720 - (setor * 120);
                         break;
                     }
                     else if (setor_disponivel[setor, j] == false && setor != 10)
@@ -142,7 +145,7 @@ namespace KIngME_
                 verificar_setor = verificar.Split('\n');
             }
         }
-        public void contagemDeVotos()
+        public void ContagemDeVotos()
         {
             string listaDeJogadores = Jogo.ListarJogadores(idpartida).Replace("\r","");
             string[] lista = listaDeJogadores.Split('\n');
@@ -161,13 +164,29 @@ namespace KIngME_
         {
             setup = new faseSetup(id_senha_jogador, idpartida);
 
-            promocao = new fasePromocao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], "");
+            estrategia = new Estrategia(Convert.ToInt32(id_senha_jogador[0]), "", id_senha_jogador[1], "", idpartida);
 
             favoritos = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
 
-            promocao.AtualizarFavoritos(favoritos);
+            string[] letras = {"A","B","C","D","E","G","H","K","L","M","Q","R","T"};
+            string naoFav = "";
+            for (int i = 0; i < 13; i++)
+            {
+                if (favoritos.Contains(letras[i]))
+                {
+                    continue;
+                }
+                else
+                {
+                    naoFav += Convert.ToString(letras[i]);
+                }
 
-            votoo = new votacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
+            }
+            estrategia.AtualizarFavoritos(favoritos);
+
+            estrategia.AtualizarNaoFav(naoFav);
+
+            votar = new criarVotacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
 
             verificarVezes = new verificarVezes();
 
@@ -192,12 +211,12 @@ namespace KIngME_
                         break;
 
                     case "P":
-                        promocao.posicionar();
+                        estrategia.NumeroJogadores();
                         break;
 
                     case "V":
                         setup.removerTodaLista();
-                        votoo.Voto();
+                        votar.Voto();
                         setup.reescreverLista();
                         coordenadasPersonagens();
                         break;

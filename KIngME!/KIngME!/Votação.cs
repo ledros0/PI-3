@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace KIngME_
 {
-    public class votacao : fasePromocao
+    public class criarVotacao : fasePromocao
     {
         int QvotosN;
-        string Rei;
         int idPartida;
-        public votacao(int idJogador, string senhaJogador, int qvotosN, string favoritos,int idPartida) : base(idJogador,senhaJogador, favoritos)
+        public criarVotacao(int idJogador, string senhaJogador, int qvotosN, string favoritos, int idPartida) : base(idJogador, senhaJogador, favoritos)
         {
             QvotosN = qvotosN;
             this.idPartida = idPartida;
@@ -21,37 +20,50 @@ namespace KIngME_
 
         public void Voto()
         {
-            string verificarRei = Jogo.VerificarVez(idPartida);
-            string[] rei = verificarRei.Replace("\r", "").Split('\n');
+            string estadoJogo = Jogo.VerificarVez(idPartida);
+            string[] linhas = estadoJogo.Replace("\r", "").Split('\n');
 
-            string[] dadosRei = rei[rei.Length - 2].Split(',');
-
-            string[] dadosCorretos = dadosRei.Select(x => x.Trim()).ToArray();
-            string[] letrasFavoritos = favoritos.Select(c => c.ToString()).ToArray();
-
-            for (int i = 0; i < letrasFavoritos.Length - 2; i++) 
+            if (linhas.Length < 2)
             {
-                if (QvotosN > 0)
+                Jogo.Votar(idJogador, senhaJogador, "S");
+                return;
+            }
+
+            string[] dadosRei = linhas[linhas.Length - 2].Split(',').Select(x => x.Trim()).ToArray();
+
+            if (dadosRei.Length < 2)
+            {
+                Jogo.Votar(idJogador, senhaJogador, "S");
+                return;
+            }
+
+            string reiAtual = dadosRei[1];
+            string[] meusFavoritos = favoritos.Split(',');
+
+            bool deveVotarNao = meusFavoritos.Contains(reiAtual) &&
+                              ObterPosicaoPersonagem(reiAtual) >= 3 &&
+                              QvotosN > 0;
+
+            string voto = deveVotarNao ? "N" : "S";
+            Jogo.Votar(idJogador, senhaJogador, voto);
+
+            if (deveVotarNao) QvotosN--;
+        }
+
+        private int ObterPosicaoPersonagem(string personagem)
+        {
+            string estado = Jogo.VerificarVez(idPartida);
+            string[] linhas = estado.Replace("\r", "").Split('\n');
+
+            for (int i = 1; i < linhas.Length - 1; i++)
+            {
+                string[] dados = linhas[i].Split(',').Select(x => x.Trim()).ToArray();
+                if (dados.Length >= 2 && dados[1] == personagem)
                 {
-                    if (dadosCorretos[1] == letrasFavoritos[i])
-                    {
-                        Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "S");                  
-                        break;
-                    }
-                    else if (i == letrasFavoritos.Length - 3)
-                    {
-                        QvotosN--;
-                        Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "N");
-                        QvotosN -= 1;
-                        break;
-                    }
-                }
-                else
-                {
-                     Jogo.Votar(Convert.ToInt32(idJogador), senhaJogador, "S");
-                    break;  
+                    return Convert.ToInt32(dados[0]);
                 }
             }
+            return -1;
         }
     }
 }
