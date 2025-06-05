@@ -60,6 +60,7 @@
             this.lblJogadorDaVez = new System.Windows.Forms.Label();
             this.lblJogadorVez = new System.Windows.Forms.Label();
             this.lblfim = new System.Windows.Forms.Label();
+            this.lbListarJogadores = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemB)).BeginInit();
@@ -80,7 +81,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(45, 565);
+            this.label17.Location = new System.Drawing.Point(45, 645);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(43, 13);
             this.label17.TabIndex = 68;
@@ -97,7 +98,7 @@
             "2,Mercadores",
             "1,Artesãos",
             "0,Plebeus"});
-            this.listBox1.Location = new System.Drawing.Point(26, 593);
+            this.listBox1.Location = new System.Drawing.Point(26, 673);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(88, 121);
             this.listBox1.TabIndex = 67;
@@ -105,7 +106,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(54, 362);
+            this.label15.Location = new System.Drawing.Point(54, 442);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(69, 13);
             this.label15.TabIndex = 66;
@@ -129,7 +130,7 @@
             "Quintas",
             "Ranulfo",
             "Toshio"});
-            this.lbListaDePersonagens.Location = new System.Drawing.Point(26, 378);
+            this.lbListaDePersonagens.Location = new System.Drawing.Point(26, 458);
             this.lbListaDePersonagens.Name = "lbListaDePersonagens";
             this.lbListaDePersonagens.Size = new System.Drawing.Size(114, 173);
             this.lbListaDePersonagens.TabIndex = 65;
@@ -321,7 +322,7 @@
             // lblSemvotos
             // 
             this.lblSemvotos.AutoSize = true;
-            this.lblSemvotos.Location = new System.Drawing.Point(26, 255);
+            this.lblSemvotos.Location = new System.Drawing.Point(26, 203);
             this.lblSemvotos.Name = "lblSemvotos";
             this.lblSemvotos.Size = new System.Drawing.Size(0, 13);
             this.lblSemvotos.TabIndex = 87;
@@ -334,7 +335,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 236);
+            this.label1.Location = new System.Drawing.Point(12, 184);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 13);
             this.label1.TabIndex = 89;
@@ -343,7 +344,7 @@
             // lblvotosN
             // 
             this.lblvotosN.AutoSize = true;
-            this.lblvotosN.Location = new System.Drawing.Point(146, 236);
+            this.lblvotosN.Location = new System.Drawing.Point(146, 184);
             this.lblvotosN.Name = "lblvotosN";
             this.lblvotosN.Size = new System.Drawing.Size(35, 13);
             this.lblvotosN.TabIndex = 90;
@@ -395,17 +396,26 @@
             // lblfim
             // 
             this.lblfim.AutoSize = true;
-            this.lblfim.Location = new System.Drawing.Point(29, 284);
+            this.lblfim.Location = new System.Drawing.Point(29, 232);
             this.lblfim.Name = "lblfim";
             this.lblfim.Size = new System.Drawing.Size(35, 13);
             this.lblfim.TabIndex = 92;
             this.lblfim.Text = "label3";
+            // 
+            // lbListarJogadores
+            // 
+            this.lbListarJogadores.FormattingEnabled = true;
+            this.lbListarJogadores.Location = new System.Drawing.Point(12, 320);
+            this.lbListarJogadores.Name = "lbListarJogadores";
+            this.lbListarJogadores.Size = new System.Drawing.Size(120, 95);
+            this.lbListarJogadores.TabIndex = 93;
             // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 922);
+            this.Controls.Add(this.lbListarJogadores);
             this.Controls.Add(this.lblfim);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblvotosN);
@@ -479,5 +489,6 @@
         private System.Windows.Forms.Label lblJogadorDaVez;
         private System.Windows.Forms.Label lblJogadorVez;
         private System.Windows.Forms.Label lblfim;
+        private System.Windows.Forms.ListBox lbListarJogadores;
     }
 }

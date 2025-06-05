@@ -68,3 +68,17 @@ C:\Users\win\Source\Repos\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.CoreComp
 C:\Users\win\Source\Repos\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.Up2Date
 C:\Users\win\Source\Repos\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.exe
 C:\Users\win\Source\Repos\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.pdb
+F:\clone\PI-3\KIngME!\KIngME!\bin\Debug\KIngME!.exe.config
+F:\clone\PI-3\KIngME!\KIngME!\bin\Debug\KIngME!.exe
+F:\clone\PI-3\KIngME!\KIngME!\bin\Debug\KIngME!.pdb
+F:\clone\PI-3\KIngME!\KIngME!\bin\Debug\KingMeServer.dll
+F:\clone\PI-3\KIngME!\KIngME!\bin\Debug\KingMeServer.xml
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.AssemblyReference.cache
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME_.Form1.resources
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME_.Jogabilidade.resources
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME_.Properties.Resources.resources
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.GenerateResource.cache
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.CoreCompileInputs.cache
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.Up2Date
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.exe
+F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.pdb

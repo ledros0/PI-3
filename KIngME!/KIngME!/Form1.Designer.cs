@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label13 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,6 +67,7 @@
             this.lblerros = new System.Windows.Forms.Label();
             this.lblErroposicao = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label13
@@ -401,6 +403,10 @@
             this.button5.Text = "Avançar";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -491,6 +497,7 @@
         private System.Windows.Forms.Label lblerros;
         private System.Windows.Forms.Label lblErroposicao;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

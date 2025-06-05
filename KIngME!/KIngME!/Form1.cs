@@ -14,19 +14,39 @@ namespace KIngME_
 
     public partial class Form1 : Form
     {
+        verificarVezes verificarVezes;
         
         string[] Id_Senha_Jogador;
         
         int n; 
 
         public string grupo = "Copistas de Durham";
+
+       
        
         public Form1()
         {
             InitializeComponent();
+            ListarPartidas();
             cbListarOpcoes.SelectedIndex = 0;
+            
         }
 
+        public void ListarPartidas()
+        {
+            string RetornoPartidas = Jogo.ListarPartidas("T");
+
+            RetornoPartidas = RetornoPartidas.Replace("\r", "");
+            RetornoPartidas = RetornoPartidas.Substring(0, RetornoPartidas.Length - 1);
+            string[] Partidas = RetornoPartidas.Split('\n');
+
+            lbPartidasListadas.Items.Clear();
+
+            for (int i = 0; i < Partidas.Length; i++)
+            {
+                lbPartidasListadas.Items.Add(Partidas[i]); //Mostrar Partidas Criadas
+            }
+        }
         private void btnListarPartidas_Click(object sender, EventArgs e)
         {
             string RetornoPartidas = cbListarOpcoes.SelectedItem.ToString();
@@ -45,10 +65,7 @@ namespace KIngME_
                 case "Encerradas":
                     RetornoPartidas = Jogo.ListarPartidas("E");
                     break;
-
             }
-
-
             RetornoPartidas = RetornoPartidas.Replace("\r", "");
             RetornoPartidas = RetornoPartidas.Substring(0, RetornoPartidas.Length - 1);
             string[] Partidas = RetornoPartidas.Split('\n');
@@ -96,6 +113,8 @@ namespace KIngME_
             n = Convert.ToInt32(Jogo.CriarPartida(txtNomePartida.Text, txtSenhaPartida.Text, grupo));
             lblNomeGrupo.Text = grupo;
             lblPartida.Text = Convert.ToString(n);
+            txtIdPartida.Text = Convert.ToString(n);
+            txtSenhaEntrarPartida.Text = txtSenhaPartida.Text;
         }
         private void label5_Click(object sender, EventArgs e)
         {
@@ -135,7 +154,8 @@ namespace KIngME_
             Jogabilidade jogar = new Jogabilidade();
             jogar.idpartida = this.n;
             jogar.id_senha_jogador = this.Id_Senha_Jogador;
-            jogar.Show();        
+            jogar.Show();
+            timer1.Stop();
         }
         private void label13_Click(object sender, EventArgs e)
         {
@@ -154,8 +174,27 @@ namespace KIngME_
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            verificarVezes = new verificarVezes();
+            timer1.Start();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {   
+           
+            bool trocarJanela = verificarVezes.deveMudarTela(n);
+            if (trocarJanela) {
+                string jogo_Iniciar = Jogo.Iniciar(Convert.ToInt32(Id_Senha_Jogador[0]), Id_Senha_Jogador[1]);
+
+                Jogabilidade jogar = new Jogabilidade();
+                jogar.idpartida = this.n;
+                jogar.id_senha_jogador = this.Id_Senha_Jogador;
+                jogar.Show();
+
+                timer1.Stop();
+               
+            }
+            
+
+        }
     }
 }

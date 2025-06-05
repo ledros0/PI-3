@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using KingMeServer;
 public class verificarVezes
 {
-    public string verificarGlobal(int idPartida)
+    public string verificarGlobal(int idPartida) //Retorna
     {
         string verificar = Jogo.VerificarVez(idPartida);
         string[] jogadorrr = verificar.Split('\n');
@@ -46,6 +46,19 @@ public class verificarVezes
         string[] fase = procuraFase[0].Split(',');
         return Convert.ToInt32(fase[2]);
     }
-
+    public bool deveMudarTela(int id)
+    {
+        string[] listaDePartidas = Jogo.ListarPartidas("T").Replace("\r","").Split('\n');
+       
+        for(int i = 0; i < listaDePartidas.Length-1; i++)
+        {
+            string[] procurandoStatusPartida = listaDePartidas[i].Split(',') ;
+            if (id == Convert.ToInt32(procurandoStatusPartida[0]) && procurandoStatusPartida[3] == "J")
+            {
+                return true;
+            }          
+        }
+        return false;
+    }
 
 }

@@ -34,7 +34,15 @@ namespace KIngME_
             ContagemDeVotos();
             timerVerificarVez.Enabled = true;
         }
-        
+        public void jogadoresEmPartida()
+        {
+            string[] jogadores = Jogo.ListarJogadores(idpartida).Replace("\r","").Split('\n');
+            lbListarJogadores.Items.Clear();
+            for(int i = 0; i < jogadores.Length; i++)
+            {
+                lbListarJogadores.Items.Add(jogadores[i]);
+            }
+        }
         public void coordenadasPersonagens()
         {
             picPersonagemA.Location = new Point(-300, 0); // Colocar os labels para fora do panel(isso deixa eles "invisiveis")
@@ -162,6 +170,7 @@ namespace KIngME_
 
         private void Jogabilidade_Load(object sender, EventArgs e)
         {
+            jogadoresEmPartida();
             setup = new faseSetup(id_senha_jogador, idpartida);
 
             estrategia = new Estrategia(Convert.ToInt32(id_senha_jogador[0]), "", id_senha_jogador[1], "", idpartida);
