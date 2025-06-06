@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "F:\\clone\\PI-3\\KIngME!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\clone\\PI-3\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\clone\\PI-3\\KIngME!\\kingme!\\verificarvezes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\verificarvezes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\clone\\PI-3\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|f:\\clone\\pi-3\\kingme!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|f:\\clone\\pi-3\\kingme!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\clone\\PI-3\\KIngME!\\kingme!\\fasepromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\fasepromocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\clone\\PI-3\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\clone\\PI-3\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|f:\\clone\\pi-3\\kingme!\\kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|F:\\clone\\PI-3\\KIngME!\\kingme!\\verificarvezes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\verificarvezes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Jogabilidade.cs",
               "DocumentMoniker": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
               "ToolTip": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeToolTip": "KIngME!\\Jogabilidade.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAKwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAALgAAAAAAAAAAAAowMMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T03:51:19.082Z",
               "IsPinned": true,
@@ -48,17 +52,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Form1.cs",
               "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
-              "ToolTip": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Form1.cs*",
-              "RelativeToolTip": "KIngME!\\Form1.cs*",
-              "ViewState": "AgIAAJ8AAAAAAAAAAIA9wK0AAAAAAAAAAAAAAA==",
+              "ToolTip": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Form1.cs",
+              "RelativeToolTip": "KIngME!\\Form1.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwCUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T21:51:10.12Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Bookmark",
@@ -78,6 +86,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Vota\u00E7\u00E3o.cs",
+              "DocumentMoniker": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
+              "RelativeDocumentMoniker": "KIngME!\\Vota\u00E7\u00E3o.cs",
+              "ToolTip": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
+              "RelativeToolTip": "KIngME!\\Vota\u00E7\u00E3o.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAC4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T21:07:59.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Jogabilidade.cs [Design]",
               "DocumentMoniker": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs",
@@ -90,28 +111,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "verificarVezes.cs",
               "DocumentMoniker": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\verificarVezes.cs",
               "RelativeDocumentMoniker": "KIngME!\\verificarVezes.cs",
               "ToolTip": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\verificarVezes.cs",
               "RelativeToolTip": "KIngME!\\verificarVezes.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAowDQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T22:52:02.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "fasePromocao.cs",
               "DocumentMoniker": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\fasePromocao.cs",
               "RelativeDocumentMoniker": "KIngME!\\fasePromocao.cs",
               "ToolTip": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\fasePromocao.cs",
               "RelativeToolTip": "KIngME!\\fasePromocao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T16:50:05.973Z"
+              "WhenOpened": "2025-04-22T16:50:05.973Z",
+              "EditorCaption": ""
             }
           ]
         },

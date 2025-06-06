@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingMeServer;
+using manager;
 
 namespace KIngME_
 {
@@ -34,11 +35,7 @@ namespace KIngME_
 
         public void ListarPartidas()
         {
-            string RetornoPartidas = Jogo.ListarPartidas("T");
-
-            RetornoPartidas = RetornoPartidas.Replace("\r", "");
-            RetornoPartidas = RetornoPartidas.Substring(0, RetornoPartidas.Length - 1);
-            string[] Partidas = RetornoPartidas.Split('\n');
+            string[] Partidas = Manager.ListaDePartida();
 
             lbPartidasListadas.Items.Clear();
 
@@ -179,9 +176,9 @@ namespace KIngME_
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {   
-           
-            bool trocarJanela = verificarVezes.deveMudarTela(n);
+        {
+
+            bool trocarJanela = Manager.DeveMudarTela(n);
             if (trocarJanela) {
                 string jogo_Iniciar = Jogo.Iniciar(Convert.ToInt32(Id_Senha_Jogador[0]), Id_Senha_Jogador[1]);
 

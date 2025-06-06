@@ -1,0 +1,9 @@
+F:\clone\PI-3\Manager\Manager\Manager\bin\Debug\Manager.dll
+F:\clone\PI-3\Manager\Manager\Manager\bin\Debug\Manager.pdb
+F:\clone\PI-3\Manager\Manager\Manager\bin\Debug\KingMeServer.dll
+F:\clone\PI-3\Manager\Manager\Manager\bin\Debug\KingMeServer.xml
+F:\clone\PI-3\Manager\Manager\Manager\obj\Debug\Manager.csproj.AssemblyReference.cache
+F:\clone\PI-3\Manager\Manager\Manager\obj\Debug\Manager.csproj.CoreCompileInputs.cache
+F:\clone\PI-3\Manager\Manager\Manager\obj\Debug\Manager.csproj.Up2Date
+F:\clone\PI-3\Manager\Manager\Manager\obj\Debug\Manager.dll
+F:\clone\PI-3\Manager\Manager\Manager\obj\Debug\Manager.pdb

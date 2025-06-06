@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KingMeServer;
-
+using manager;
 namespace KIngME_
 {
     public partial class Jogabilidade : Form
@@ -22,7 +22,7 @@ namespace KIngME_
         fasePromocao promocao;
         public string favoritos;
         criarVotacao votar;
-        verificarVezes verificarVezes;
+      
         int votosN = 3;
         Estrategia estrategia;
 
@@ -61,12 +61,12 @@ namespace KIngME_
         }
         public void verificarVez()
         {
-            lblJogadorDaVez.Text = verificarVezes.verificarNomeJogadorVez(idpartida);
-            label19.Text = verificarVezes.verificarGlobal(idpartida);
+            lblJogadorDaVez.Text = Manager.verificarNomeJogadorVez(idpartida);
+            label19.Text = Manager.VerificarID(idpartida);
 
-            string verificar = Jogo.VerificarVez(idpartida);
+            string verificar = Jogo.VerificarVez(idpartida).Replace("\r", "");
             string[] verificar_setor = verificar.Split('\n');
-
+            //
             bool[,] setor_disponivel = new bool[,] { // Inicializa uma matriz de booleano para saber qual posição está ocupada
                 { false, false, false, false },
                 { false, false, false, false },
@@ -84,8 +84,7 @@ namespace KIngME_
                 int setor = Convert.ToInt32(verificar_setor[0]);
                 string personagem = verificar_setor[1];
                 int x = 0;
-                int y = 0;
-
+                int y = 0;             
                 for (int j = 0; j < 4; j++) // Verificação do espaço disponível para o personagem no setor 
                 {                           // e determinação das coordenadas onde o label irá
                     if (setor == 10)
@@ -107,43 +106,43 @@ namespace KIngME_
 
                 switch (personagem) // Qual label será posicionado nessas coordenadas
                 {
-                    case "A\r":
+                    case "A":
                         picPersonagemA.Location = new Point(x, y);
                         break;
-                    case "B\r":
+                    case "B":
                         picPersonagemB.Location = new Point(x, y);
                         break;
-                    case "C\r":
+                    case "C":
                         picPersonagemC.Location = new Point(x, y);
                         break;
-                    case "D\r":
+                    case "D":
                         picPersonagemD.Location = new Point(x, y);
                         break;
-                    case "E\r":
+                    case "E":
                         picPersonagemE.Location = new Point(x, y);
                         break;
-                    case "G\r":
+                    case "G":
                         picPersonagemG.Location = new Point(x, y);
                         break;
-                    case "H\r":
+                    case "H":
                         picPersonagemH.Location = new Point(x, y);
                         break;
-                    case "K\r":
+                    case "K":
                         picPersonagemK.Location = new Point(x, y);
                         break;
-                    case "L\r":
+                    case "L":
                         picPersonagemL.Location = new Point(x, y);
                         break;
-                    case "M\r":
+                    case "M":
                         picPersonagemM.Location = new Point(x, y);
                         break;
-                    case "Q\r":
+                    case "Q":
                         picPersonagemQ.Location = new Point(x, y);
                         break;
-                    case "R\r":
+                    case "R":
                         picPersonagemR.Location = new Point(x, y);
                         break;
-                    case "T\r":
+                    case "T":
                         picPersonagemT.Location = new Point(x, y);
                         break;
                     default:
@@ -155,17 +154,7 @@ namespace KIngME_
         }
         public void ContagemDeVotos()
         {
-            string listaDeJogadores = Jogo.ListarJogadores(idpartida).Replace("\r","");
-            string[] lista = listaDeJogadores.Split('\n');
-            switch (lista.Length)
-            {
-                case 3:
-                    votosN = 4;
-                    break;
-                case 4:
-                    votosN = 3;
-                    break;
-            }      
+            votosN = Manager.ContarVotos(idpartida);    
         }
 
         private void Jogabilidade_Load(object sender, EventArgs e)
@@ -181,7 +170,7 @@ namespace KIngME_
             string naoFav = "";
             for (int i = 0; i < 13; i++)
             {
-                if (favoritos.Contains(letras[i]))
+                if (favoritos.Contains(letras[i]))//Isso aq ta estranho.Poderia ser apenas um not
                 {
                     continue;
                 }
@@ -197,23 +186,21 @@ namespace KIngME_
 
             votar = new criarVotacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
 
-            verificarVezes = new verificarVezes();
 
             lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
         }
         private void timerVerificarVez_Tick(object sender, EventArgs e)
         {
-            string[] verificarLinhaUm = Jogo.VerificarVez(idpartida).Replace("\r","").Split('\n') ;
 
-            string[] verificarFase = verificarLinhaUm[0].Split(',');
+            string verificarFase = Manager.VerificarFaseDaPartida(idpartida);
             
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
-            string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
-            int jogador = Convert.ToInt32(jogadorDaVez[0]);
+            
+            int jogador = Convert.ToInt32(Manager.VerificarID(idpartida));
             if (jogador == Convert.ToInt32(id_senha_jogador[0]))
             {
-                switch (verificarFase[3])
+                switch (verificarFase)
                 {
                     case "S":
                         setup.posicionarPersonagem();
@@ -228,12 +215,14 @@ namespace KIngME_
                         votar.Voto();
                         setup.reescreverLista();
                         coordenadasPersonagens();
+                        
                         break;
                     case "E":
                         lblfim.Text = "Fim de jogo";
                         break;
                 }
             }
+            jogadoresEmPartida();
             coordenadasPersonagens();
             verificarVez();
             timerVerificarVez.Enabled = true; 
