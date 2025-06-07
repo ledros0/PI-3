@@ -61,7 +61,7 @@
             this.lblJogadorVez = new System.Windows.Forms.Label();
             this.lblfim = new System.Windows.Forms.Label();
             this.lbListarJogadores = new System.Windows.Forms.ListBox();
-            this.lvlFavs = new System.Windows.Forms.Label();
+            this.lblFavs = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemB)).BeginInit();
@@ -409,21 +409,21 @@
             this.lbListarJogadores.Size = new System.Drawing.Size(120, 95);
             this.lbListarJogadores.TabIndex = 93;
             // 
-            // lvlFavs
+            // lblFavs
             // 
-            this.lvlFavs.AutoSize = true;
-            this.lvlFavs.Location = new System.Drawing.Point(95, 21);
-            this.lvlFavs.Name = "lvlFavs";
-            this.lvlFavs.Size = new System.Drawing.Size(35, 13);
-            this.lvlFavs.TabIndex = 94;
-            this.lvlFavs.Text = "label3";
+            this.lblFavs.AutoSize = true;
+            this.lblFavs.Location = new System.Drawing.Point(95, 21);
+            this.lblFavs.Name = "lblFavs";
+            this.lblFavs.Size = new System.Drawing.Size(35, 13);
+            this.lblFavs.TabIndex = 94;
+            this.lblFavs.Text = "label3";
             // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 922);
-            this.Controls.Add(this.lvlFavs);
+            this.Controls.Add(this.lblFavs);
             this.Controls.Add(this.lbListarJogadores);
             this.Controls.Add(this.lblfim);
             this.Controls.Add(this.label2);
@@ -499,6 +499,6 @@
         private System.Windows.Forms.Label lblJogadorVez;
         private System.Windows.Forms.Label lblfim;
         private System.Windows.Forms.ListBox lbListarJogadores;
-        private System.Windows.Forms.Label lvlFavs;
+        private System.Windows.Forms.Label lblFavs;
     }
 }

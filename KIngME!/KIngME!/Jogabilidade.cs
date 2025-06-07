@@ -157,7 +157,8 @@ namespace KIngME_
         }
 
         private void Jogabilidade_Load(object sender, EventArgs e)
-        {
+        {   
+           
             ContagemDeVotos();
             jogadoresEmPartida();
             setup = new faseSetup(idESenhaJogador, idDaPartida);
@@ -165,8 +166,8 @@ namespace KIngME_
             estrategia = new Estrategia(Convert.ToInt32(idESenhaJogador[0]), "", idESenhaJogador[1], "", idDaPartida);
 
             favoritos = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
-
-            string[] letras = {"A","B","C","D","E","G","H","K","L","M","Q","R","T"};
+            lblFavs.Text = favoritos.ToString();
+           string[] letras = {"A","B","C","D","E","G","H","K","L","M","Q","R","T"};
             string naoFav = "";
             for (int i = 0; i < 13; i++)
             {

@@ -12,7 +12,6 @@ using manager;
 
 namespace KIngME_
 {
-
     public partial class Form1 : Form
     {
         verificarVezes verificarVezes;
@@ -174,21 +173,15 @@ namespace KIngME_
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             bool trocarJanela = Manager.DeveMudarTela(idDaPartida);
             if (trocarJanela) {
                 string jogo_Iniciar = Jogo.Iniciar(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
-
                 Jogabilidade jogar = new Jogabilidade();
                 jogar.idDaPartida = this.idDaPartida;
                 jogar.idESenhaJogador = this.idESenhaJogador;
                 jogar.Show();
-
-                timer1.Stop();
-               
+                timer1.Stop();        
             }
-            
-
         }
 
         private void lblgrupo_Click(object sender, EventArgs e)
