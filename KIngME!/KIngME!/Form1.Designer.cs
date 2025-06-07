@@ -66,7 +66,6 @@
             this.lblErroIniciar = new System.Windows.Forms.Label();
             this.lblerros = new System.Windows.Forms.Label();
             this.lblErroposicao = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -209,7 +208,8 @@
             this.lblgrupo.Name = "lblgrupo";
             this.lblgrupo.Size = new System.Drawing.Size(22, 13);
             this.lblgrupo.TabIndex = 22;
-            this.lblgrupo.Text = "1.1";
+            this.lblgrupo.Text = "1.2";
+            this.lblgrupo.Click += new System.EventHandler(this.lblgrupo_Click);
             // 
             // lblversao
             // 
@@ -394,15 +394,6 @@
             this.lblErroposicao.Size = new System.Drawing.Size(0, 13);
             this.lblErroposicao.TabIndex = 61;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(597, 616);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 63;
-            this.button5.Text = "Avançar";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -412,7 +403,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 658);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.lblErroposicao);
             this.Controls.Add(this.lblerros);
             this.Controls.Add(this.lblErroIniciar);
@@ -496,7 +486,6 @@
         private System.Windows.Forms.Label lblErroIniciar;
         private System.Windows.Forms.Label lblerros;
         private System.Windows.Forms.Label lblErroposicao;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Timer timer1;
     }
 }

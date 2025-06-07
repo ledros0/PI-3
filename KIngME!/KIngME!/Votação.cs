@@ -10,7 +10,7 @@ namespace KIngME_
 {
     public class criarVotacao : fasePromocao
     {
-        int QvotosN;
+        public int QvotosN;
         int idPartida;
         public criarVotacao(int idJogador, string senhaJogador, int qvotosN, string favoritos, int idPartida) : base(idJogador, senhaJogador, favoritos)
         {
@@ -29,7 +29,7 @@ namespace KIngME_
                 return;
             }
 
-            string[] dadosRei = linhas[linhas.Length - 2].Split(',').Select(x => x.Trim()).ToArray();
+            string[] dadosRei = linhas[linhas.Length - 2].Split(',');
 
             if (dadosRei.Length < 2)
             {
@@ -38,7 +38,7 @@ namespace KIngME_
             }
 
             string reiAtual = dadosRei[1];
-            string[] meusFavoritos = favoritos.Split(',');
+            string[] meusFavoritos = favoritos.Select(c=>c.ToString()).ToArray();
 
             bool deveVotarNao = meusFavoritos.Contains(reiAtual) &&
                               ObterPosicaoPersonagem(reiAtual) >= 3 &&

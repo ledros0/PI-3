@@ -17,9 +17,9 @@ namespace KIngME_
     {
         verificarVezes verificarVezes;
         
-        string[] Id_Senha_Jogador;
+        string[] idESenhaJogador;
         
-        int n; 
+        int idDaPartida; 
 
         public string grupo = "Copistas de Durham";
 
@@ -94,10 +94,7 @@ namespace KIngME_
                 MessageBox.Show("Houve um Problema: \n" + ListaDeJogadores);
                 return;
             }
-
-            ListaDeJogadores = ListaDeJogadores.Replace("\r", "");
-
-            string[] jogadores = ListaDeJogadores.Split('\n');
+            string[] jogadores = ListaDeJogadores.Replace("\r","").Split('\n');
 
             lbListarJogadores.Items.Clear();
             for (int i = 0; i < jogadores.Length; i++)
@@ -107,10 +104,10 @@ namespace KIngME_
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            n = Convert.ToInt32(Jogo.CriarPartida(txtNomePartida.Text, txtSenhaPartida.Text, grupo));
+            idDaPartida = Convert.ToInt32(Jogo.CriarPartida(txtNomePartida.Text, txtSenhaPartida.Text, grupo));
             lblNomeGrupo.Text = grupo;
-            lblPartida.Text = Convert.ToString(n);
-            txtIdPartida.Text = Convert.ToString(n);
+            lblPartida.Text = Convert.ToString(idDaPartida);
+            txtIdPartida.Text = Convert.ToString(idDaPartida);
             txtSenhaEntrarPartida.Text = txtSenhaPartida.Text;
         }
         private void label5_Click(object sender, EventArgs e)
@@ -120,12 +117,12 @@ namespace KIngME_
 
         private void btnEntrarNaPartida_Click(object sender, EventArgs e)
         {
-            n = Convert.ToInt32(txtIdPartida.Text);
-            int idPartida = Convert.ToInt32(txtIdPartida.Text);
+            idDaPartida = Convert.ToInt32(txtIdPartida.Text);
+            //int idPartida = Convert.ToInt32(txtIdPartida.Text);
             
-            string Jogador = Jogo.Entrar(idPartida, txtJogadorNome.Text, txtSenhaEntrarPartida.Text);
+            string Jogador = Jogo.Entrar(idDaPartida, txtJogadorNome.Text, txtSenhaEntrarPartida.Text);
 
-            Id_Senha_Jogador = Jogador.Split(',');
+            idESenhaJogador = Jogador.Split(',');
             //int ID_Jogador = Convert.ToInt32(Id_Senha_Jogador);
             if (Jogador.Substring(0,4)=="ERRO")
             {
@@ -133,8 +130,8 @@ namespace KIngME_
             }
             else
             {
-                lblIdJogador.Text = Id_Senha_Jogador[0];
-                lblSenhaJogador.Text = Id_Senha_Jogador[1];
+                lblIdJogador.Text = idESenhaJogador[0];
+                lblSenhaJogador.Text = idESenhaJogador[1];
             }
             
         }
@@ -144,13 +141,13 @@ namespace KIngME_
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            int Entrar_IdJogador = Convert.ToInt32(Id_Senha_Jogador[0]);
+            int Entrar_IdJogador = Convert.ToInt32(idESenhaJogador[0]);
 
-            string jogo_Iniciar = Jogo.Iniciar(Entrar_IdJogador, Id_Senha_Jogador[1]);
+            string jogo_Iniciar = Jogo.Iniciar(Entrar_IdJogador, idESenhaJogador[1]);
 
             Jogabilidade jogar = new Jogabilidade();
-            jogar.idpartida = this.n;
-            jogar.id_senha_jogador = this.Id_Senha_Jogador;
+            jogar.idDaPartida = this.idDaPartida;
+            jogar.idESenhaJogador = this.idESenhaJogador;
             jogar.Show();
             timer1.Stop();
         }
@@ -178,19 +175,29 @@ namespace KIngME_
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            bool trocarJanela = Manager.DeveMudarTela(n);
+            bool trocarJanela = Manager.DeveMudarTela(idDaPartida);
             if (trocarJanela) {
-                string jogo_Iniciar = Jogo.Iniciar(Convert.ToInt32(Id_Senha_Jogador[0]), Id_Senha_Jogador[1]);
+                string jogo_Iniciar = Jogo.Iniciar(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
 
                 Jogabilidade jogar = new Jogabilidade();
-                jogar.idpartida = this.n;
-                jogar.id_senha_jogador = this.Id_Senha_Jogador;
+                jogar.idDaPartida = this.idDaPartida;
+                jogar.idESenhaJogador = this.idESenhaJogador;
                 jogar.Show();
 
                 timer1.Stop();
                
             }
             
+
+        }
+
+        private void lblgrupo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
 
         }
     }
