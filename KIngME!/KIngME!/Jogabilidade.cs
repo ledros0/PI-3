@@ -19,10 +19,9 @@ namespace KIngME_
         public int idpartida { get; set; }
         public string[] id_senha_jogador { get; set; }
         faseSetup setup;
-        fasePromocao promocao;
         public string favoritos;
         criarVotacao votar;
-      
+        verificarVezes verificarVezes;
         int votosN = 3;
         Estrategia estrategia;
 
@@ -186,13 +185,14 @@ namespace KIngME_
 
             votar = new criarVotacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
 
+            verificarVezes = new verificarVezes();
 
             lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
         }
         private void timerVerificarVez_Tick(object sender, EventArgs e)
         {
 
-            string verificarFase = Manager.VerificarFaseDaPartida(idpartida);
+            string verificarFase = verificarVezes.verificarFaseDaPartida(idpartida);
             
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;

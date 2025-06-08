@@ -8,14 +8,20 @@ using System.Threading.Tasks;
 
 namespace KIngME_
 {
-    public class criarVotacao : fasePromocao
+    public class criarVotacao
     {
         int QvotosN;
         int idPartida;
-        public criarVotacao(int idJogador, string senhaJogador, int qvotosN, string favoritos, int idPartida) : base(idJogador, senhaJogador, favoritos)
+        string senhaJogador;
+        string favoritos;
+        int idJogador;
+        public criarVotacao(int idJogador, string senhaJogador, int qvotosN, string favoritos, int idPartida)
         {
-            QvotosN = qvotosN;
+            this.QvotosN = qvotosN;
             this.idPartida = idPartida;
+            this.idJogador = idJogador;
+            this.senhaJogador = senhaJogador;
+            this.favoritos = favoritos;
         }
 
         public void Voto()

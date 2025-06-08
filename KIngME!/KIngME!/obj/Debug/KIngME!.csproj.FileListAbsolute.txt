@@ -83,3 +83,4 @@ F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.csproj.Up2Date
 F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.exe
 F:\clone\PI-3\KIngME!\KIngME!\obj\Debug\KIngME!.pdb
 F:\clone\PI-3\KIngME!\KIngME!\bin\Debug\Manager.dll
+C:\Users\win\Source\Repos\PI-3\KIngME!\KIngME!\bin\Debug\Manager.dll

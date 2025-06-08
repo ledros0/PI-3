@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Estrategia.cs" />
-    <Compile Include="fasePromocao.cs" />
     <Compile Include="faseSetup.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

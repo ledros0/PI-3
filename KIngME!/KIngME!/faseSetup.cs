@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using KingMeServer;
- public class faseSetup
+using manager;
+public class faseSetup
 {
     List<string> listaPersonagens = new List<string>(){
             "A", "B", "C", "D", "E", "G", "H", "K", "L", "M", "Q", "R", "T"
@@ -12,7 +14,6 @@ using KingMeServer;
     public string[] idSenhaJogador;
     public  int idpartida;
     int rodada = 0;
-
     public faseSetup(string[]idSenhaJogador,int idPartida) { 
         
         this.idSenhaJogador = idSenhaJogador;
@@ -41,41 +42,45 @@ using KingMeServer;
     public void jogarPersonagem()
     {
         string favoritos = Jogo.ListarCartas(Convert.ToInt32(idSenhaJogador[0]), idSenhaJogador[1]);
-        string[] favoritosArray = favoritos.Select(c => c.ToString()).ToArray(); ;
+        string[] favoritosArray = favoritos.Select(c => c.ToString()).ToArray();
 
         Random r = new Random();
-        int[] setor = {4,4,3,4,3,3,2,2};
+        int[] setor = { 4, 4, 4, 4, 3, 3 };
 
         int personagem = r.Next(0, favoritosArray.Length);
         int listaAleatoria = r.Next(0, listaPersonagens.Count);
-        int numeroBaixo = r.Next(1, 4);
+        int numeroBaixo = r.Next(1, 5);
 
         int idJogador = Convert.ToInt32(idSenhaJogador[0]);
-        string[] jogadorDaVez = Jogo.VerificarVez(idpartida).Split(',');
-
         string senhaJogador = idSenhaJogador[1];
 
         if (rodada >= setor.Length)
         {
-            rodada = 0; 
+            rodada = 0;
         }
- 
 
-        for (int i = 0; i < listaPersonagens.Count; i++)
+        string[] estadoTabuleiro = Jogo.VerificarVez(idpartida).Replace("\r", "").Split('\n');
+
+        foreach (string linha in estadoTabuleiro)
         {
-            if (favoritosArray.Contains(listaPersonagens[i]))
+            string[] partes = linha.Split(',');
+
+            if (partes.Length > 1)
             {
-                Jogo.ColocarPersonagem(idJogador, senhaJogador, setor[rodada], favoritosArray[personagem]);
-                break;
-            }
-            else
-            {
-                Jogo.ColocarPersonagem(idJogador, senhaJogador, numeroBaixo, listaPersonagens[listaAleatoria]);
-                break;
+                string personagemJogado = partes[1];
+
+                if (favoritosArray.Contains(personagemJogado))
+                {
+                    Jogo.ColocarPersonagem(idJogador, senhaJogador, numeroBaixo, listaPersonagens[listaAleatoria]);
+                    rodada++;
+                    return;
+                }
             }
         }
+        Jogo.ColocarPersonagem(idJogador, senhaJogador, setor[rodada], favoritosArray[personagem]);
         rodada++;
     }
+
     public void posicionarPersonagem()
     {
         if (listaPersonagens.Count == 0)

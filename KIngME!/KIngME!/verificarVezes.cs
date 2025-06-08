@@ -38,13 +38,13 @@ public class verificarVezes
         }
         return "\0";
     }
-    public int verificarFaseDaPartida(int idPartida)
+    public string verificarFaseDaPartida(int idPartida)
     {
         string verificar = Jogo.VerificarVez(idPartida);
         string[] procuraFase = verificar.Replace("\r", "").Split('\n');
 
         string[] fase = procuraFase[0].Split(',');
-        return Convert.ToInt32(fase[2]);
+        return (fase[3]);
     }
     public bool deveMudarTela(int id)
     {
