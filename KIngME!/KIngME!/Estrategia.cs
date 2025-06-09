@@ -17,7 +17,6 @@ namespace KIngME_
         private int idPartida;
         private string[] colocacao = new string[7];
         private string letra;
-        int count = 0;
         public List<string> listaFavoritos = new List<string>();
 
         public Estrategia(int idJogador, string favoritos, string senhaJogador, string naoFavoritos, int idPartida)
@@ -66,6 +65,7 @@ namespace KIngME_
                 PromocaoAprimorada();
             }
         }
+
         public void PromocaoNormal()
         {
             Random r = new Random();
@@ -73,6 +73,7 @@ namespace KIngME_
             int i = r.Next(0, letrasFavoritos.Length);
             Jogo.Promover(idJogador, senhaJogador, letrasFavoritos[i]);
         }
+
         public void Instanciar()
         {
             for (int i = 0; i < 7; i++)
@@ -81,21 +82,23 @@ namespace KIngME_
             }
             AlimentarLista();
         }
-        //13 personagens;
+
         public void PegarMatriz()
         {
-
             string[] matriz = Manager.matrizVerificarVez(idPartida);
 
-            for (int i = 1; i < matriz.Length - 1; i++)
+            for (int i = 1; i < matriz.Length; i++)
             {
                 string matrizDividida = matriz[i];
                 string[] partes = matrizDividida.Split(',');
+
+                if (partes[0] == "")
 
                 letra = partes[1];
                 colocacao[Convert.ToInt32(partes[0])] += letra;
             }
         }
+
         public void PromocaoAprimorada()
         {
             string[] letrasFavoritasNaPosicao = new string[4];

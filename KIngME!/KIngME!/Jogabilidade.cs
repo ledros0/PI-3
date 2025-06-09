@@ -204,6 +204,9 @@ namespace KIngME_
                 switch (verificarFase)
                 {
                     case "S":
+                        favoritos = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
+                        lblFavoritos.Text = favoritos.ToString();
+                        lblvotosN.Text = favoritos.ToString();
                         setup.posicionarPersonagem();
                         break;
 
@@ -216,7 +219,6 @@ namespace KIngME_
                         votar.Voto();
                         setup.reescreverLista();
                         EsconderPersonagens();
-                       // favoritos = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
                         lblFavs.Text = favoritos.ToString();
                         lblvotosN.Text = votar.qntdVotosNao.ToString() ;
                         break;
