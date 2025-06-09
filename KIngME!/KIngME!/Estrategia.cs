@@ -92,7 +92,7 @@ namespace KIngME_
                 string matrizDividida = matriz[i];
                 string[] partes = matrizDividida.Split(',');
 
-                if (partes[0] == "")
+                if (partes[0] == "") { return; }
 
                 letra = partes[1];
                 colocacao[Convert.ToInt32(partes[0])] += letra;
