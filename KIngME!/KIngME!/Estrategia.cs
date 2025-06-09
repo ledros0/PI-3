@@ -1,4 +1,4 @@
-﻿using KingMeServer;
+using KingMeServer;
 using manager;
 using System;
 using System.Collections.Generic;
@@ -57,7 +57,7 @@ namespace KIngME_
             string listaDeJogadores = Jogo.ListarJogadores(idPartida).Replace("\r", "");
             string[] lista = listaDeJogadores.Split('\n');
             
-            if(lista.Length < 0)
+            if(lista.Length <= 2)
             {
                 PromocaoNormal();
             }
@@ -104,26 +104,20 @@ namespace KIngME_
             Instanciar();
             PegarMatriz();
 
-            if (count < 5) 
+            for (int i = 5; i >= 0; i--)
             {
-                int startIndex = count < 2 ? 4 : 5; 
-
-                for (int i = startIndex; i >= 0; i--)
+                if (colocacao[i] != null && listaFavoritos.Any(letra => colocacao[i].Contains(letra)))
                 {
-                    if (colocacao[i] != null && listaFavoritos.Any(letra => colocacao[i].Contains(letra)))
-                    {
-                        var letrasArray = colocacao[i].Where(letra => favoritos.Contains(letra)).ToArray();
+                    var letrasArray = colocacao[i].Where(letra => favoritos.Contains(letra)).ToArray();
 
-                        if (letrasArray.Length > 0)
-                        {
-                            Jogo.Promover(idJogador, senhaJogador, letrasArray[0].ToString());
-                            count++;
-                            return;
-                        }
+                    if (letrasArray.Length > 0)
+                    {
+                        Jogo.Promover(idJogador, senhaJogador, letrasArray[0].ToString());
+                        count++;
+                        return;
                     }
                 }
             }
-
             for (int i = 0; i <= 5; i++)
             {
                 if (colocacao[i] != null && colocacao[i].Contains(naoFavoritos))
