@@ -45,11 +45,11 @@ public class faseSetup
         string[] favoritosArray = favoritos.Select(c => c.ToString()).ToArray();
 
         Random r = new Random();
-        int[] setor = { 4, 3, 4, 3, 4, 3, 4, 3, 4 };
+        int[] setor = { 5, 4, 5, 4, 5, 4, 5, 4 };
 
         int personagem = r.Next(0, favoritosArray.Length);
         int listaAleatoria = r.Next(0, listaPersonagens.Count);
-        int numeroBaixo = r.Next(1, 4);
+        int numeroBaixo = r.Next(1, 5);
 
         int idJogador = Convert.ToInt32(idSenhaJogador[0]);
         string senhaJogador = idSenhaJogador[1];
