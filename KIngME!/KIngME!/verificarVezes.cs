@@ -60,5 +60,18 @@ public class verificarVezes
         }
         return false;
     }
+    public int ContarVotos(int id)
+    {
+        string listaDeJogadores = Jogo.ListarJogadores(id).Replace("\r", "");
+        string[] lista = listaDeJogadores.Split('\n');
+        switch (lista.Length-1)
+        {
+            case 3:
+                return 4;
+            case 4:
+                return 3;
+        }
+        return 0;
+    }
 
 }

@@ -178,7 +178,7 @@ namespace KIngME_
         private void Jogabilidade_Load(object sender, EventArgs e)
         {
             jogadoresEmPartida();
-            qntdVotosNao = Manager.ContarVotos(idDaPartida);
+            
             setup = new faseSetup(idESenhaJogador, idDaPartida);
 
             estrategia = new Estrategia(Convert.ToInt32(idESenhaJogador[0]), "", idESenhaJogador[1], "", idDaPartida);
@@ -202,11 +202,11 @@ namespace KIngME_
             estrategia.AtualizarFavoritos(favoritos);
 
             estrategia.AtualizarNaoFav(naoFav);
-
+            qntdVotosNao = Manager.ContarVotos(idDaPartida);
             votar = new criarVotacao(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1], qntdVotosNao, favoritos, idDaPartida);
 
             verificarVezes = new verificarVezes();
-
+            
             lblFav.Text = favoritos.ToString();
             lblVotosNao.Text = qntdVotosNao.ToString();
         }

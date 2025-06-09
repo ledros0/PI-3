@@ -86,13 +86,19 @@ namespace manager
             }
             return false;
         }
-
+        public static string[] matrizVerificarVez(int idPartida)
+        {
+            string[] verificarJogo = Jogo.VerificarVez(idPartida).Replace("\r", "").Split('\n');
+            return verificarJogo;
+        }
         public static int ContarVotos(int id)
         {
             string listaDeJogadores = Jogo.ListarJogadores(id).Replace("\r", "");
             string[] lista = listaDeJogadores.Split('\n');
-            switch (lista.Length)
+            switch (lista.Length-1)
             {
+                case 2:
+                    return 4;
                 case 3:
                     return 4;
                 case 4:
