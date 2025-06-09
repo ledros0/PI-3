@@ -63,6 +63,7 @@ namespace KIngME_
                     RetornoPartidas = Jogo.ListarPartidas("E");
                     break;
             }
+
             RetornoPartidas = RetornoPartidas.Replace("\r", "");
             RetornoPartidas = RetornoPartidas.Substring(0, RetornoPartidas.Length - 1);
             string[] Partidas = RetornoPartidas.Split('\n');
@@ -73,6 +74,7 @@ namespace KIngME_
             {
                 lbPartidasListadas.Items.Add(Partidas[i]); //Mostrar Partidas Criadas
             }
+
             lblgrupo.Text = Jogo.versao;
             lblversao.Text = grupo;
         }

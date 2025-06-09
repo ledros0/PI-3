@@ -28,6 +28,7 @@ namespace KIngME_
             this.favoritos = favoritos ?? "";
             this.naoFavoritos = naoFavoritos ?? "";
         }
+
         public void AtualizarFavoritos(string favsNovos) => this.favoritos = favsNovos;
         public void AtualizarNaoFav(string Nfavs) => this.naoFavoritos = Nfavs;
 
@@ -122,6 +123,7 @@ namespace KIngME_
                     }
                 }
             }
+
             for (int i = 0; i <= 5; i++)
             {
                 if (colocacao[i] != null && colocacao[i].Contains(naoFavoritos))
