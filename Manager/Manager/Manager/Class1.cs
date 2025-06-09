@@ -91,8 +91,10 @@ namespace manager
         {
             string listaDeJogadores = Jogo.ListarJogadores(id).Replace("\r", "");
             string[] lista = listaDeJogadores.Split('\n');
-            switch (lista.Length)
+            switch (lista.Length-1)
             {
+                case 2:
+                    return 4;
                 case 3:
                     return 4;
                 case 4:
@@ -108,6 +110,22 @@ namespace manager
             RetornoPartidas = RetornoPartidas.Substring(0, RetornoPartidas.Length - 1);
             string[] Partidas = RetornoPartidas.Split('\n');
             return Partidas;
+        }
+        public static string[] matrizVerificarVez(int idPartida)
+        {
+            return Jogo.VerificarVez(idPartida).Replace("\r", "").Split('\n');
+        }
+        public static string[] matrizPersonagensEmJogo(int idPartida)
+        {
+            string[] array = matrizVerificarVez(idPartida);
+            string[] array2 = new string[array.Length];
+            for (int i = 1; i < array.Length - 1; i++)
+            {
+                string[] array3 = array[i].Split(',');
+                array2[i] = array3[1];
+            }
+
+            return array2;
         }
     }
 }

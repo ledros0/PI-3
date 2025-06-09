@@ -10,14 +10,14 @@ namespace KIngME_
 {
     public class criarVotacao
     {
-        int QvotosN;
+       public int qntdVotosNao;
         int idPartida;
         string senhaJogador;
         string favoritos;
         int idJogador;
         public criarVotacao(int idJogador, string senhaJogador, int qvotosN, string favoritos, int idPartida)
         {
-            this.QvotosN = qvotosN;
+            this.qntdVotosNao = qvotosN;
             this.idPartida = idPartida;
             this.idJogador = idJogador;
             this.senhaJogador = senhaJogador;
@@ -48,12 +48,12 @@ namespace KIngME_
 
             bool deveVotarNao = meusFavoritos.Contains(reiAtual) &&
                               ObterPosicaoPersonagem(reiAtual) >= 3 &&
-                              QvotosN > 0;
+                              qntdVotosNao > 0;
 
             string voto = deveVotarNao ? "N" : "S";
             Jogo.Votar(idJogador, senhaJogador, voto);
 
-            if (deveVotarNao) QvotosN--;
+            if (deveVotarNao) qntdVotosNao--;
         }
 
         private int ObterPosicaoPersonagem(string personagem)

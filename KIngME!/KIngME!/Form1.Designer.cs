@@ -205,20 +205,19 @@
             // lblgrupo
             // 
             this.lblgrupo.AutoSize = true;
-            this.lblgrupo.Location = new System.Drawing.Point(53, 588);
+            this.lblgrupo.Location = new System.Drawing.Point(52, 616);
             this.lblgrupo.Name = "lblgrupo";
-            this.lblgrupo.Size = new System.Drawing.Size(22, 13);
+            this.lblgrupo.Size = new System.Drawing.Size(0, 13);
             this.lblgrupo.TabIndex = 22;
-            this.lblgrupo.Text = "1.1";
             // 
             // lblversao
             // 
             this.lblversao.AutoSize = true;
-            this.lblversao.Location = new System.Drawing.Point(53, 616);
+            this.lblversao.Location = new System.Drawing.Point(56, 588);
             this.lblversao.Name = "lblversao";
-            this.lblversao.Size = new System.Drawing.Size(102, 13);
+            this.lblversao.Size = new System.Drawing.Size(0, 13);
             this.lblversao.TabIndex = 23;
-            this.lblversao.Text = "Copistas de Durham";
+            this.lblversao.Click += new System.EventHandler(this.lblversao_Click);
             // 
             // label7
             // 
