@@ -75,25 +75,42 @@ namespace KIngME_
         }
         public void Instanciar()
         {
-            for (int i = 0; i < 7; i++)
+           /* for (int i = 0; i < 7; i++)
             {
                 colocacao[i] = null;
-            }
+            }*/
             AlimentarLista();
         }
         //13 personagens;
         public void PegarMatriz()
         {
+            for (int i = 0; i < colocacao.Length; i++)
+            {
+                colocacao[i] = null;
+            }
 
             string[] matriz = Manager.matrizVerificarVez(idPartida);
 
             for (int i = 1; i < matriz.Length - 1; i++)
-            {
+            {   
+                
                 string matrizDividida = matriz[i];
                 string[] partes = matrizDividida.Split(',');
 
                 letra = partes[1];
-                colocacao[Convert.ToInt32(partes[0])] += letra;
+                int setor = Convert.ToInt32(partes[0]);
+                int indice = (setor == 10) ? 6 : setor;
+                if (colocacao[indice] == null)
+                {
+                    colocacao[indice] = "";
+                }
+
+                // Só adiciona a letra se ela ainda não estiver no setor
+                if (!colocacao[indice].Contains(letra))
+                {
+                    colocacao[indice] += letra;
+                }
+
             }
         }
         public void PromocaoAprimorada()
@@ -123,18 +140,25 @@ namespace KIngME_
                     }
                 }
             }
-
+            string[] arrayNaoFavoritos = naoFavoritos.Select(c => c.ToString()).ToArray();
+         
             for (int i = 0; i <= 5; i++)
             {
-                if (colocacao[i] != null && colocacao[i].Contains(naoFavoritos))
+                string[] arrayLetra = colocacao[i].Select(c => c.ToString()).ToArray();
+                if (colocacao[i] != null && arrayLetra.Contains(arrayNaoFavoritos[i]))
                 {
                     var nFavs = colocacao[i].Where(letra => naoFavoritos.Contains(letra)).ToArray();
-
-                    if (nFavs.Length > 0)
+                    int idDaVez = Convert.ToInt32(Manager.VerificarID(idPartida));
+                    int cont = 0;
+                    while(idDaVez == idJogador && cont<nFavs.Length)
                     {
-                        Jogo.Promover(idJogador, senhaJogador, nFavs[0].ToString());
-                        return;
+                        if (nFavs.Length > 0)
+                        {
+                            Jogo.Promover(idJogador, senhaJogador, nFavs[cont].ToString());
+                            cont++;
+                        }
                     }
+                    return;
                 }
             }
         }

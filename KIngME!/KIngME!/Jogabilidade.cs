@@ -16,13 +16,13 @@ namespace KIngME_
     {   
         Form1 form1 = new Form1();
         int contador = 1;
-        public int idpartida { get; set; }
-        public string[] id_senha_jogador { get; set; }
+        public int idDaPartida { get; set; }
+        public string[] idESenhaJogador { get; set; }
         faseSetup setup;
         public string favoritos;
         criarVotacao votar;
         verificarVezes verificarVezes;
-        int votosN = 3;
+        int qntdVotosNao = 3;
         Estrategia estrategia;
 
 
@@ -35,7 +35,7 @@ namespace KIngME_
         }
         public void jogadoresEmPartida()
         {
-            string[] jogadores = Jogo.ListarJogadores(idpartida).Replace("\r","").Split('\n');
+            string[] jogadores = Jogo.ListarJogadores(idDaPartida).Replace("\r","").Split('\n');
             lbListarJogadores.Items.Clear();
             for(int i = 0; i < jogadores.Length; i++)
             {
@@ -61,7 +61,7 @@ namespace KIngME_
 
         public void PosicionarPersonagens()
         {
-            string[] setorPersonagem = Manager.matrizVerificarVez(idpartida);
+            string[] setorPersonagem = Manager.matrizVerificarVez(idDaPartida);
 
             bool[,] setorEstaDisponivel = new bool[,] { // Inicializa uma matriz de booleano para saber qual posição está disponivel
                 { true, true, true, true },
@@ -152,17 +152,38 @@ namespace KIngME_
 
         public void ContagemDeVotos()
         {
-            votosN = Manager.ContarVotos(idpartida);    
+            qntdVotosNao = Manager.ContarVotos(idDaPartida);    
         }
+        public void atualizandoFavoritos()
+        {
+           
+            string[] letras = { "A", "B", "C", "D", "E", "G", "H", "K", "L", "M", "Q", "R", "T" };
+            string naoFav = "";
+            for (int i = 0; i < 13; i++)
+            {
+                if (favoritos.Contains(letras[i]))//Isso aq ta estranho.Poderia ser apenas um not
+                {
+                    continue;
+                }
+                else
+                {
+                    naoFav += Convert.ToString(letras[i]);
+                }
 
+            }
+            estrategia.AtualizarFavoritos(favoritos);
+
+            estrategia.AtualizarNaoFav(naoFav);
+        }
         private void Jogabilidade_Load(object sender, EventArgs e)
         {
             jogadoresEmPartida();
-            setup = new faseSetup(id_senha_jogador, idpartida);
+            qntdVotosNao = Manager.ContarVotos(idDaPartida);
+            setup = new faseSetup(idESenhaJogador, idDaPartida);
 
-            estrategia = new Estrategia(Convert.ToInt32(id_senha_jogador[0]), "", id_senha_jogador[1], "", idpartida);
+            estrategia = new Estrategia(Convert.ToInt32(idESenhaJogador[0]), "", idESenhaJogador[1], "", idDaPartida);
 
-            favoritos = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
+            favoritos = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
 
             string[] letras = {"A","B","C","D","E","G","H","K","L","M","Q","R","T"};
             string naoFav = "";
@@ -182,25 +203,26 @@ namespace KIngME_
 
             estrategia.AtualizarNaoFav(naoFav);
 
-            votar = new criarVotacao(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1], votosN, favoritos, idpartida);
+            votar = new criarVotacao(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1], qntdVotosNao, favoritos, idDaPartida);
 
             verificarVezes = new verificarVezes();
 
-            lblF.Text = Jogo.ListarCartas(Convert.ToInt32(id_senha_jogador[0]), id_senha_jogador[1]);
+            lblFav.Text = favoritos.ToString();
+            lblVotosNao.Text = qntdVotosNao.ToString();
         }
         private void timerVerificarVez_Tick(object sender, EventArgs e)
         {
-
-            string verificarFase = verificarVezes.verificarFaseDaPartida(idpartida);
+            
+            string verificarFase = verificarVezes.verificarFaseDaPartida(idDaPartida);
             
             //listaPersonagem.contains(nomeDaVariavel)
             timerVerificarVez.Enabled = false;
 
-            lblJogadorDaVez.Text = Manager.verificarNomeJogadorVez(idpartida);
-            label19.Text = Manager.VerificarID(idpartida);
+            lblJogadorDaVez.Text = Manager.verificarNomeJogadorVez(idDaPartida);
+            label19.Text = Manager.VerificarID(idDaPartida);
 
-            int jogador = Convert.ToInt32(Manager.VerificarID(idpartida));
-            if (jogador == Convert.ToInt32(id_senha_jogador[0]))
+            int jogador = Convert.ToInt32(Manager.VerificarID(idDaPartida));
+            if (jogador == Convert.ToInt32(idESenhaJogador[0]))
             {
                 switch (verificarFase)
                 {
@@ -209,7 +231,7 @@ namespace KIngME_
                         break;
 
                     case "P":
-                        estrategia.NumeroJogadores();
+                        estrategia.PromocaoAprimorada();
                         break;
 
                     case "V":
@@ -217,7 +239,10 @@ namespace KIngME_
                         votar.Voto();
                         setup.reescreverLista();
                         EsconderPersonagens();
-                        
+                        favoritos = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
+                        lblFav.Text = favoritos.ToString();
+                        atualizandoFavoritos();
+                        lblVotosNao.Text = qntdVotosNao.ToString();
                         break;
                     case "E":
                         lblfim.Text = "Fim de jogo";

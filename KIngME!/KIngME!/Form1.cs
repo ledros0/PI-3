@@ -151,8 +151,8 @@ namespace KIngME_
             string jogo_Iniciar = Jogo.Iniciar(Entrar_IdJogador, Id_Senha_Jogador[1]);
 
             Jogabilidade jogar = new Jogabilidade();
-            jogar.idpartida = this.n;
-            jogar.id_senha_jogador = this.Id_Senha_Jogador;
+            jogar.idDaPartida = this.n;
+            jogar.idESenhaJogador = this.Id_Senha_Jogador;
             jogar.Show();
             timer1.Stop();
         }
@@ -185,8 +185,8 @@ namespace KIngME_
                 string jogo_Iniciar = Jogo.Iniciar(Convert.ToInt32(Id_Senha_Jogador[0]), Id_Senha_Jogador[1]);
 
                 Jogabilidade jogar = new Jogabilidade();
-                jogar.idpartida = this.n;
-                jogar.id_senha_jogador = this.Id_Senha_Jogador;
+                jogar.idDaPartida = this.n;
+                jogar.idESenhaJogador = this.Id_Senha_Jogador;
                 jogar.Show();
 
                 timer1.Stop();

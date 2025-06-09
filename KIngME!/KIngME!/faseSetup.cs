@@ -4,6 +4,7 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using KingMeServer;
 using manager;
 public class faseSetup
@@ -53,32 +54,38 @@ public class faseSetup
 
         int idJogador = Convert.ToInt32(idSenhaJogador[0]);
         string senhaJogador = idSenhaJogador[1];
-
-        if (rodada >= setor.Length)
-        {
-            rodada = 0;
-        }
-
-        string[] estadoTabuleiro = Jogo.VerificarVez(idpartida).Replace("\r", "").Split('\n');
-
+       
+        string[] estadoTabuleiro = Manager.matrizVerificarVez(idpartida);
         foreach (string linha in estadoTabuleiro)
         {
             string[] partes = linha.Split(',');
-
+            if(listaPersonagens.Count() == 0)
+            {
+                return;
+            }
             if (partes.Length > 1)
             {
                 string personagemJogado = partes[1];
-
                 if (favoritosArray.Contains(personagemJogado))
                 {
-                    Jogo.ColocarPersonagem(idJogador, senhaJogador, numeroBaixo, listaPersonagens[listaAleatoria]);
+                 Jogo.ColocarPersonagem(idJogador, senhaJogador, numeroBaixo, listaPersonagens[listaAleatoria]);                 
                     rodada++;
                     return;
                 }
             }
         }
-        Jogo.ColocarPersonagem(idJogador, senhaJogador, setor[rodada], favoritosArray[personagem]);
-        rodada++;
+        if(rodada > 5)
+        {
+            int posicionar = rodada % 5;
+            Jogo.ColocarPersonagem(idJogador, senhaJogador, setor[posicionar], favoritosArray[personagem]);
+            rodada++;
+        }
+        else
+        {
+            Jogo.ColocarPersonagem(idJogador, senhaJogador, setor[rodada], favoritosArray[personagem]);
+            rodada++;
+        }
+
     }
 
     public void posicionarPersonagem()

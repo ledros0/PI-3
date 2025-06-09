@@ -53,14 +53,14 @@
             this.lblSemvotos = new System.Windows.Forms.Label();
             this.timerVerificarVez = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.lblvotosN = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblFav = new System.Windows.Forms.Label();
             this.lblIdVez = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lblJogadorDaVez = new System.Windows.Forms.Label();
             this.lblJogadorVez = new System.Windows.Forms.Label();
             this.lblfim = new System.Windows.Forms.Label();
             this.lbListarJogadores = new System.Windows.Forms.ListBox();
+            this.lblVotosNao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPersonagemB)).BeginInit();
@@ -138,7 +138,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(61, 21);
+            this.label16.Location = new System.Drawing.Point(35, 21);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 13);
             this.label16.TabIndex = 64;
@@ -341,23 +341,13 @@
             this.label1.TabIndex = 89;
             this.label1.Text = "Quantidade de Votos não";
             // 
-            // lblvotosN
+            // lblFav
             // 
-            this.lblvotosN.AutoSize = true;
-            this.lblvotosN.Location = new System.Drawing.Point(146, 184);
-            this.lblvotosN.Name = "lblvotosN";
-            this.lblvotosN.Size = new System.Drawing.Size(35, 13);
-            this.lblvotosN.TabIndex = 90;
-            this.lblvotosN.Text = "label2";
-            this.lblvotosN.Click += new System.EventHandler(this.lblvotosN_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(121, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 91;
+            this.lblFav.AutoSize = true;
+            this.lblFav.Location = new System.Drawing.Point(121, 20);
+            this.lblFav.Name = "lblFav";
+            this.lblFav.Size = new System.Drawing.Size(0, 13);
+            this.lblFav.TabIndex = 91;
             // 
             // lblIdVez
             // 
@@ -398,9 +388,8 @@
             this.lblfim.AutoSize = true;
             this.lblfim.Location = new System.Drawing.Point(29, 232);
             this.lblfim.Name = "lblfim";
-            this.lblfim.Size = new System.Drawing.Size(35, 13);
+            this.lblfim.Size = new System.Drawing.Size(0, 13);
             this.lblfim.TabIndex = 92;
-            this.lblfim.Text = "label3";
             // 
             // lbListarJogadores
             // 
@@ -410,15 +399,23 @@
             this.lbListarJogadores.Size = new System.Drawing.Size(120, 95);
             this.lbListarJogadores.TabIndex = 93;
             // 
+            // lblVotosNao
+            // 
+            this.lblVotosNao.AutoSize = true;
+            this.lblVotosNao.Location = new System.Drawing.Point(147, 183);
+            this.lblVotosNao.Name = "lblVotosNao";
+            this.lblVotosNao.Size = new System.Drawing.Size(0, 13);
+            this.lblVotosNao.TabIndex = 94;
+            // 
             // Jogabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 922);
+            this.Controls.Add(this.lblVotosNao);
             this.Controls.Add(this.lbListarJogadores);
             this.Controls.Add(this.lblfim);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblvotosN);
+            this.Controls.Add(this.lblFav);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblSemvotos);
             this.Controls.Add(this.panel1);
@@ -482,13 +479,13 @@
         private System.Windows.Forms.Label lblSemvotos;
         private System.Windows.Forms.Timer timerVerificarVez;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblvotosN;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblFav;
         private System.Windows.Forms.Label lblIdVez;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lblJogadorDaVez;
         private System.Windows.Forms.Label lblJogadorVez;
         private System.Windows.Forms.Label lblfim;
         private System.Windows.Forms.ListBox lbListarJogadores;
+        private System.Windows.Forms.Label lblVotosNao;
     }
 }
