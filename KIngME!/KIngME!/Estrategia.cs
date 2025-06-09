@@ -116,7 +116,6 @@ namespace KIngME_
                     if (letrasArray.Length > 0)
                     {
                         Jogo.Promover(idJogador, senhaJogador, letrasArray[0].ToString());
-                        count++;
                         return;
                     }
                 }
