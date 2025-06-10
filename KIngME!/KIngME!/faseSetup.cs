@@ -69,7 +69,7 @@ public class faseSetup
             {
                 string personagemJogado = partes[1];
 
-                if (favoritosArray.Contains(personagemJogado))
+                if (favoritosArray.Contains(personagemJogado) && listaAleatoria != 0)
                 {
                     Jogo.ColocarPersonagem(idJogador, senhaJogador, numeroBaixo, listaPersonagens[listaAleatoria]);
                     rodada++;

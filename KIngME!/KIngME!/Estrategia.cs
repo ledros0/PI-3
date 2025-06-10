@@ -92,10 +92,19 @@ namespace KIngME_
                 string matrizDividida = matriz[i];
                 string[] partes = matrizDividida.Split(',');
 
-                if (partes[0] == "") { return; }
+                if (partes.Length < 2 || string.IsNullOrEmpty(partes[0]))
+                {
+                    continue;
+                }
 
-                letra = partes[1];
-                colocacao[Convert.ToInt32(partes[0])] += letra;
+                if (int.TryParse(partes[0], out int j))
+                {
+                    if (j >= 0 && j <= 6)
+                    {
+                        string letra = partes[1];
+                        colocacao[j] += letra;
+                    }
+                }
             }
         }
 
@@ -107,30 +116,39 @@ namespace KIngME_
             Instanciar();
             PegarMatriz();
 
-            for (int i = 5; i >= 0; i--)
+            int count = 0;
+            while (count != 3)
             {
-                if (colocacao[i] != null && listaFavoritos.Any(letra => colocacao[i].Contains(letra)))
+                for (int i = 5; i >= 0; i--)
                 {
-                    var letrasArray = colocacao[i].Where(letra => favoritos.Contains(letra)).ToArray();
-
-                    if (letrasArray.Length > 0)
+                    if (!string.IsNullOrEmpty(colocacao[i]) && colocacao[i].Any(letra => naoFavoritos.Contains(letra)))
                     {
-                        Jogo.Promover(idJogador, senhaJogador, letrasArray[0].ToString());
+                        count++;
+                        var nFavs = colocacao[i].First(letra => naoFavoritos.Contains(letra.ToString()));
+
+                        Jogo.Promover(idJogador, senhaJogador, nFavs.ToString());
                         return;
                     }
                 }
             }
             for (int i = 0; i <= 5; i++)
             {
-                if (colocacao[i] != null && colocacao[i].Contains(naoFavoritos))
+                if (!string.IsNullOrEmpty(colocacao[i]) && colocacao[i].Any(letra => favoritos.Contains(letra)))
                 {
-                    var nFavs = colocacao[i].Where(letra => naoFavoritos.Contains(letra)).ToArray();
+                    var letrasArray = colocacao[i].First(letra => favoritos.Contains(letra.ToString()));
 
-                    if (nFavs.Length > 0)
-                    {
-                        Jogo.Promover(idJogador, senhaJogador, nFavs[0].ToString());
-                        return;
-                    }
+                    Jogo.Promover(idJogador, senhaJogador, letrasArray.ToString());
+                    return;                  
+                }
+            }
+            for (int i = 0; i <= 5; i++)
+            {
+                if (!string.IsNullOrEmpty(colocacao[i]) && colocacao[i].Any(letra => naoFavoritos.Contains(letra)))
+                {
+                    var nFavs = colocacao[i].First(letra => naoFavoritos.Contains(letra.ToString()));
+
+                    Jogo.Promover(idJogador, senhaJogador, nFavs.ToString());
+                    return;
                 }
             }
         }

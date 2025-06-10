@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\",
+  "WorkspaceRootPath": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\win\\source\\repos\\pi-31\\kingme!\\kingme!\\estrategia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\kingme!\\estrategia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\estrategia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\kingme!\\fasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\fasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\vota\u00E7\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\kingme!\\verificarvezes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|c:\\users\\win\\onedrive\\\u00E1rea de trabalho\\pi-3\\kingme!\\kingme!\\fasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\fasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\jogabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\kingme!\\verificarvezes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40636E0B-E83F-4A51-B427-70EFC7B25524}|KIngME!\\KIngME!.csproj|solutionrelative:kingme!\\verificarvezes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,13 +46,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Form1.cs",
               "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
-              "ToolTip": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Form1.cs",
+              "ToolTip": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Form1.cs",
               "RelativeToolTip": "KIngME!\\Form1.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwDQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowEQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T21:51:10.12Z",
               "IsPinned": true
@@ -75,81 +75,86 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Form1.cs",
               "RelativeDocumentMoniker": "KIngME!\\Form1.cs",
-              "ToolTip": "C:\\Users\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\KIngME!\\KIngME!\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Lucas\\Documents\\GitHub\\Pi 3\\PI-3\\KIngME!\\KIngME!\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\guilherme.basilva1\\source\\repos\\PI-3\\KIngME!\\KIngME!\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\guilherme.basilva1\\source\\repos\\PI-3\\KIngME!\\KIngME!\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T17:56:02.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "faseSetup.cs",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\faseSetup.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\faseSetup.cs",
               "RelativeDocumentMoniker": "KIngME!\\faseSetup.cs",
-              "ToolTip": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\faseSetup.cs",
+              "ToolTip": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\faseSetup.cs",
               "RelativeToolTip": "KIngME!\\faseSetup.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAqwEwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T17:54:03.339Z"
+              "WhenOpened": "2025-06-09T17:54:03.339Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Jogabilidade.cs",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Jogabilidade.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Jogabilidade.cs",
+              "ToolTip": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeToolTip": "KIngME!\\Jogabilidade.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAMwM4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAMwNMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T03:51:19.082Z"
+              "WhenOpened": "2025-03-22T03:51:19.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Estrategia.cs",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Estrategia.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Estrategia.cs",
               "RelativeDocumentMoniker": "KIngME!\\Estrategia.cs",
-              "ToolTip": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Estrategia.cs",
+              "ToolTip": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Estrategia.cs",
               "RelativeToolTip": "KIngME!\\Estrategia.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAmwGYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T00:48:08.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Vota\u00E7\u00E3o.cs",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
               "RelativeDocumentMoniker": "KIngME!\\Vota\u00E7\u00E3o.cs",
-              "ToolTip": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
+              "ToolTip": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Vota\u00E7\u00E3o.cs",
               "RelativeToolTip": "KIngME!\\Vota\u00E7\u00E3o.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T21:07:59.39Z"
+              "WhenOpened": "2025-06-05T21:07:59.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Jogabilidade.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\Jogabilidade.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs",
               "RelativeDocumentMoniker": "KIngME!\\Jogabilidade.cs",
-              "ToolTip": "F:\\clone\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]",
+              "ToolTip": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\Jogabilidade.cs [Design]",
+              "RelativeToolTip": "KIngME!\\Jogabilidade.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:01:19.195Z"
+              "WhenOpened": "2025-06-05T17:01:19.195Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "verificarVezes.cs",
-              "DocumentMoniker": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\verificarVezes.cs",
+              "DocumentMoniker": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\verificarVezes.cs",
               "RelativeDocumentMoniker": "KIngME!\\verificarVezes.cs",
-              "ToolTip": "C:\\Users\\win\\source\\repos\\PI-31\\KIngME!\\KIngME!\\verificarVezes.cs",
+              "ToolTip": "C:\\Users\\win\\OneDrive\\\u00C1rea de Trabalho\\PI-3\\KIngME!\\KIngME!\\verificarVezes.cs",
               "RelativeToolTip": "KIngME!\\verificarVezes.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAowCkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
