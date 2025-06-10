@@ -163,7 +163,7 @@ namespace KIngME_
             estrategia = new Estrategia(Convert.ToInt32(idESenhaJogador[0]), "", idESenhaJogador[1], "", idpartida);
 
             favoritos = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
-            lblFavs.Text = favoritos.ToString(); 
+            lblFavoritos.Text = favoritos.ToString(); 
             string[] letras = {"A","B","C","D","E","G","H","K","L","M","Q","R","T"};
             string naoFav = "";
             for (int i = 0; i < 13; i++)
@@ -187,7 +187,7 @@ namespace KIngME_
 
             verificarVezes = new verificarVezes();
 
-            lblF.Text = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
+            lblFavoritos.Text = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
             lblvotosN.Text = qntdVotosNao.ToString();
         }
         private void timerVerificarVez_Tick(object sender, EventArgs e)
@@ -206,7 +206,7 @@ namespace KIngME_
                     case "S":
                         favoritos = Jogo.ListarCartas(Convert.ToInt32(idESenhaJogador[0]), idESenhaJogador[1]);
                         lblFavoritos.Text = favoritos.ToString();
-                        lblvotosN.Text = favoritos.ToString();
+                        lblvotosN.Text = qntdVotosNao.ToString();
                         setup.posicionarPersonagem();
                         break;
 
@@ -219,7 +219,7 @@ namespace KIngME_
                         votar.Voto();
                         setup.reescreverLista();
                         EsconderPersonagens();
-                        lblFavs.Text = favoritos.ToString();
+                        lblFavoritos.Text = favoritos.ToString();
                         lblvotosN.Text = votar.qntdVotosNao.ToString() ;
                         break;
                     case "E":
