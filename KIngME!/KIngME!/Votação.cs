@@ -46,7 +46,7 @@ namespace KIngME_
             string reiAtual = dadosRei[1];
             string[] meusFavoritos = favoritos.Split(',').Select(x => x.Trim()).ToArray();
 
-            bool deveVotarNao = meusFavoritos.Contains(reiAtual) && ObterPosicaoPersonagem(reiAtual) >= 3 && qntdVotosNao > 0;
+            bool deveVotarNao = !meusFavoritos.Contains(reiAtual) && ObterPosicaoPersonagem(reiAtual) >= 3 && qntdVotosNao > 0;
 
             string voto = deveVotarNao ? "N" : "S";
             Jogo.Votar(idJogador, senhaJogador, voto);
